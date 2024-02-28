@@ -10,10 +10,6 @@ class MapViewModel: ObservableObject {
         }
     } // Current selected location
     @Published var cameraPosition: MapCameraPosition = .region(MKCoordinateRegion())    // 지도 표시 위치 region
-    @Published var mapSelection: MKMapItem?
-    
-    
-    let mapSpan = MKCoordinateSpan(latitudeDelta: 0.1, longitudeDelta: 0.1)
     
     init() {
         let locations = LocationData.locations
