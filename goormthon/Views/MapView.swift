@@ -6,12 +6,8 @@ struct MapView: View {
     
     var body: some View {
         ZStack {
-            Map(coordinateRegion: $vm.mapRegion,
-                annotationItems: vm.locations,
-                annotationContent: {location in
-                MapMarker(coordinate: location.coordinates, tint: .blue)
-            })
-                .ignoresSafeArea()
+            mapLayer
+            .ignoresSafeArea()
             
             VStack {
                 Spacer()
@@ -29,9 +25,25 @@ extension MapView {
         LocationsListView()
             .frame(height: 300)
             .frame(maxWidth: .infinity)
-            .background(.thickMaterial)
+            .background(.ultraThinMaterial)
             .cornerRadius(10)
             .shadow(radius: 20)
+    }
+    
+    private var mapLayer: some View {
+        Map(coordinateRegion: $vm.mapRegion,
+            annotationItems: vm.locations,
+            annotationContent: {location in
+            MapAnnotation(coordinate: location.coordinates) {
+                // 위치 표시 마커
+                MarkerView()
+                    .scaleEffect(vm.location == location ? 1 : 0.7)
+                    .shadow(radius: 10)
+                    .onTapGesture {
+                        vm.showNextLocation(location: location) // 선택한 장소로 이동
+                    }
+            }
+        })
     }
 }
 
