@@ -9,13 +9,13 @@ import SwiftUI
 
 struct LocationListSheetView: View {
     
-        @ObservedObject var viewModel : UserViewModel
-        @State private var isDestinationActive : Bool = false
-        init(viewModel: UserViewModel) {
-            self.viewModel = viewModel
-        }
-
-        
+    @ObservedObject var viewModel : UserViewModel
+    @State private var isDestinationActive : Bool = false
+    init(viewModel: UserViewModel) {
+        self.viewModel = viewModel
+    }
+    
+    
     
     var body: some View {
         NavigationView{
@@ -25,7 +25,7 @@ struct LocationListSheetView: View {
                     .font(.largeTitle)
                     .bold()
                     .foregroundStyle(.gray500)
-                    .padding(.leading,16)
+                
                     .padding(.top,34)
                 
                 NavigationLink(destination: OnBoardingPersonalView(viewModel:viewModel),isActive:$isDestinationActive) {
@@ -35,7 +35,7 @@ struct LocationListSheetView: View {
                         }
                     }
                     label :
-                    {      
+                    {
                         HStack{
                             Image(systemName: "plus.circle.fill")
                                 .foregroundColor(.white)
@@ -52,13 +52,12 @@ struct LocationListSheetView: View {
                         
                     }
                     .frame(width: 360,height: 42)
-                    .padding(.leading,16)
                     .padding(.bottom,50)
-           
+                    
                 }
                 
                 LocationListView()
-            }
+            }    .padding(.leading,16)
         }
     }
 }
@@ -74,22 +73,71 @@ struct LocationListView: View {
                 .font(.callout)
                 .bold()
                 .foregroundStyle(.gray500)
-                
+            
             
             ForEach(0..<list.count){ index in
                 
-                Text(list[index].name)
-                    .background{
+                ZStack{
+                    RoundedRectangle(cornerRadius: 10)
+                        .foregroundColor(.beigie100)
+                        .frame(width: 360,height: 116)
+                        .shadow(radius: 4 , x: 0, y: 4)
+                    
+                    
+                    HStack{
                         
-                        RoundedRectangle(cornerRadius: 10)
-                            .foregroundColor(.beigie100)
-                            .frame(width: 360,height: 116)
-                            .shadow(radius: 4 , x: 0, y: 4)
                         
+                        Image("Background")
+                            .resizable()
+                            .clipShape(Circle())
+                            .frame(width: 82,height: 82)
+                            .aspectRatio(contentMode: .fill)
+                            .padding(.leading,12)
+                        
+                        
+                        VStack{
+                            
+                            Text(list[index].name)
+                            //                                        .font(.headline)
+                            //                                        .foregroundStyle(.gray100)
+                            
+                            HStack{
+                                
+                                ZStack{
+                                    ForEach(list[index].hashTags.extractKeywords(), id: \.self) { tag in
+                                        
+                                        
+                                        
+                                        Text("#\(tag) ")
+                                            .font(.headline)
+                                            .foregroundStyle(.gray300)
+                                        
+                                    }.padding(.leading, -5)
+                                    //                                        .background{
+                                    //
+                                    //                                            RoundedRectangle(cornerRadius: 99)
+                                    //                                                .foregroundStyle(.beigie300)
+                                    //                                                .overlay{
+                                    //                                                    Text(list[index].k)
+                                    //                                                        .font(.headline)
+                                    //                                                }
+                                    //                                        }
+                                }
+                            }
+                        }
+                        Spacer()
                     }
-                    .frame(width: 360,height: 116)
+                    
+                    
+                    //.clipShape{Circle().frame(width: 64, height: 64)}
+                    
+                    
+                    
+                    
+                }
+                .frame(width: 360,height: 116)
                 
-              
+                
                 
             }
             Spacer()

@@ -61,8 +61,7 @@ class LocationInfoDataModel: ObservableObject {
             
             self?.info = infoModel
             self?.loadLocationImage()
-           
-        
+    
         }
         
     }
