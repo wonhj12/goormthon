@@ -1,5 +1,6 @@
 import Foundation
 import MapKit
+import SwiftUI
 
 class MapViewModel: ObservableObject {
     @Published var locations: [Location] // All loaded locations
@@ -9,6 +10,7 @@ class MapViewModel: ObservableObject {
         }
     } // Current selected location
     @Published var mapRegion: MKCoordinateRegion = MKCoordinateRegion() // 지도 표시 위치 region
+    
     
     let mapSpan = MKCoordinateSpan(latitudeDelta: 0.1, longitudeDelta: 0.1)
     
@@ -23,6 +25,12 @@ class MapViewModel: ObservableObject {
         mapRegion = MKCoordinateRegion(
             center: location.coordinates,
             span: mapSpan)
+    }
+    
+    func showNextLocation(location: Location) {
+        withAnimation(.easeOut) {
+            self.location = location
+        }
     }
     
 }
