@@ -8,7 +8,3 @@ struct ContentView: View {
         // MapView()
     }
 }
-
-#Preview {
-    ContentView()
-}
