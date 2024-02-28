@@ -20,7 +20,7 @@ struct MarkerView: View {
                 .frame(width: 10, height: 10)
                 .rotationEffect(Angle(degrees: 180))
                 .offset(y: -3)
-                .padding(.bottom, 60)
+                .padding(.bottom, 50)
             
         }
     }

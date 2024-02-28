@@ -7,7 +7,7 @@ struct MapView: View {
     var body: some View {
         ZStack {
             mapLayer
-            .ignoresSafeArea()
+                .ignoresSafeArea()
             
             VStack {
                 Spacer()
@@ -31,19 +31,22 @@ extension MapView {
     }
     
     private var mapLayer: some View {
-        Map(coordinateRegion: $vm.mapRegion,
-            annotationItems: vm.locations,
-            annotationContent: {location in
-            MapAnnotation(coordinate: location.coordinates) {
-                // 위치 표시 마커
-                MarkerView()
-                    .scaleEffect(vm.location == location ? 1 : 0.7)
-                    .shadow(radius: 10)
-                    .onTapGesture {
-                        vm.showNextLocation(location: location) // 선택한 장소로 이동
-                    }
+        Map(position: $vm.cameraPosition) {
+            ForEach(vm.locations) { location in
+                Annotation("", coordinate: location.coordinates) {
+                    MarkerView()
+                        .scaleEffect(vm.location == location ? 1 : 0.7)
+                        .shadow(radius: 10)
+                        .onTapGesture {
+                            vm.showNextLocation(location: location) // 선택한 장소로 이동
+                        }
+                }
             }
-        })
+            
+            MapPolyline(coordinates: vm.locations.map{$0.coordinates})
+                .stroke(.black, style: StrokeStyle(lineWidth: 1, dash: [10]))
+                
+        }
     }
 }
 
