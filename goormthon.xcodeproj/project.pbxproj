@@ -14,6 +14,16 @@
 		F74F48CF2B8EBE8700CFC786 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = F74F48CE2B8EBE8700CFC786 /* .gitignore */; };
 		F74F48D12B8EBEA800CFC786 /* .gitattributes in Resources */ = {isa = PBXBuildFile; fileRef = F74F48D02B8EBEA800CFC786 /* .gitattributes */; };
 		F74F48D42B8EC01600CFC786 /* DaumMap.embeddedframework in Resources */ = {isa = PBXBuildFile; fileRef = F74F48D32B8EC01600CFC786 /* DaumMap.embeddedframework */; };
+		F74F48D72B8EC05F00CFC786 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F74F48D62B8EC05F00CFC786 /* OpenGLES.framework */; };
+		F74F48DB2B8EC07000CFC786 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F74F48DA2B8EC07000CFC786 /* CoreLocation.framework */; };
+		F74F48DD2B8EC07A00CFC786 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = F74F48DC2B8EC07A00CFC786 /* libc++.tbd */; };
+		F74F48DF2B8EC12500CFC786 /* DaumMap.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F74F48DE2B8EC12500CFC786 /* DaumMap.framework */; };
+		F74F48E12B8EC13000CFC786 /* libxml2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = F74F48E02B8EC13000CFC786 /* libxml2.tbd */; };
+		F74F48E32B8EC13600CFC786 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = F74F48E22B8EC13600CFC786 /* libsqlite3.tbd */; };
+		F74F48E42B8EC15C00CFC786 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F74F48D82B8EC06500CFC786 /* SystemConfiguration.framework */; };
+		F74F48E62B8EC16F00CFC786 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F74F48E52B8EC16F00CFC786 /* QuartzCore.framework */; };
+		F74F48EA2B8EC34400CFC786 /* KakaoMapWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F74F48E92B8EC34400CFC786 /* KakaoMapWrapper.swift */; };
+		F74F48EC2B8EC44400CFC786 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F74F48EB2B8EC44400CFC786 /* MapView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +36,16 @@
 		F74F48D02B8EBEA800CFC786 /* .gitattributes */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitattributes; sourceTree = "<group>"; };
 		F74F48D22B8EBFE800CFC786 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		F74F48D32B8EC01600CFC786 /* DaumMap.embeddedframework */ = {isa = PBXFileReference; lastKnownFileType = folder; path = DaumMap.embeddedframework; sourceTree = "<group>"; };
+		F74F48D62B8EC05F00CFC786 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		F74F48D82B8EC06500CFC786 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		F74F48DA2B8EC07000CFC786 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		F74F48DC2B8EC07A00CFC786 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		F74F48DE2B8EC12500CFC786 /* DaumMap.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DaumMap.framework; path = goormthon/DaumMap.embeddedframework/DaumMap.framework; sourceTree = "<group>"; };
+		F74F48E02B8EC13000CFC786 /* libxml2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.tbd; path = usr/lib/libxml2.tbd; sourceTree = SDKROOT; };
+		F74F48E22B8EC13600CFC786 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		F74F48E52B8EC16F00CFC786 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		F74F48E92B8EC34400CFC786 /* KakaoMapWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KakaoMapWrapper.swift; sourceTree = "<group>"; };
+		F74F48EB2B8EC44400CFC786 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +53,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F74F48E62B8EC16F00CFC786 /* QuartzCore.framework in Frameworks */,
+				F74F48E42B8EC15C00CFC786 /* SystemConfiguration.framework in Frameworks */,
+				F74F48E32B8EC13600CFC786 /* libsqlite3.tbd in Frameworks */,
+				F74F48E12B8EC13000CFC786 /* libxml2.tbd in Frameworks */,
+				F74F48DD2B8EC07A00CFC786 /* libc++.tbd in Frameworks */,
+				F74F48DB2B8EC07000CFC786 /* CoreLocation.framework in Frameworks */,
+				F74F48DF2B8EC12500CFC786 /* DaumMap.framework in Frameworks */,
+				F74F48D72B8EC05F00CFC786 /* OpenGLES.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -46,6 +74,7 @@
 				F74F48CE2B8EBE8700CFC786 /* .gitignore */,
 				F74F48BF2B8EBE6E00CFC786 /* goormthon */,
 				F74F48BE2B8EBE6E00CFC786 /* Products */,
+				F74F48D52B8EC05F00CFC786 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,6 +89,7 @@
 		F74F48BF2B8EBE6E00CFC786 /* goormthon */ = {
 			isa = PBXGroup;
 			children = (
+				F74F48E82B8EC33400CFC786 /* Views */,
 				F74F48D32B8EC01600CFC786 /* DaumMap.embeddedframework */,
 				F74F48D22B8EBFE800CFC786 /* Info.plist */,
 				F74F48C02B8EBE6E00CFC786 /* goormthonApp.swift */,
@@ -76,6 +106,30 @@
 				F74F48C72B8EBE6F00CFC786 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F74F48D52B8EC05F00CFC786 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F74F48E52B8EC16F00CFC786 /* QuartzCore.framework */,
+				F74F48E22B8EC13600CFC786 /* libsqlite3.tbd */,
+				F74F48E02B8EC13000CFC786 /* libxml2.tbd */,
+				F74F48DC2B8EC07A00CFC786 /* libc++.tbd */,
+				F74F48DA2B8EC07000CFC786 /* CoreLocation.framework */,
+				F74F48D82B8EC06500CFC786 /* SystemConfiguration.framework */,
+				F74F48D62B8EC05F00CFC786 /* OpenGLES.framework */,
+				F74F48DE2B8EC12500CFC786 /* DaumMap.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F74F48E82B8EC33400CFC786 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F74F48E92B8EC34400CFC786 /* KakaoMapWrapper.swift */,
+				F74F48EB2B8EC44400CFC786 /* MapView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -152,6 +206,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				F74F48C32B8EBE6E00CFC786 /* ContentView.swift in Sources */,
+				F74F48EC2B8EC44400CFC786 /* MapView.swift in Sources */,
+				F74F48EA2B8EC34400CFC786 /* KakaoMapWrapper.swift in Sources */,
 				F74F48C12B8EBE6E00CFC786 /* goormthonApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -283,11 +339,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_ARC = NO;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"goormthon/Preview Content\"";
 				DEVELOPMENT_TEAM = 785KK9R5M8;
 				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/goormthon/DaumMap.embeddedframework",
+				);
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = goormthon/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -303,6 +364,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.hajin.goormthon;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = /Users/hajin/Documents/9oormthon/goormthon/goormthon/DaumMap.embeddedframework/KakaoBridgeHeader.h;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -313,11 +375,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_ARC = NO;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"goormthon/Preview Content\"";
 				DEVELOPMENT_TEAM = 785KK9R5M8;
 				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/goormthon/DaumMap.embeddedframework",
+				);
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = goormthon/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -333,6 +400,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.hajin.goormthon;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = /Users/hajin/Documents/9oormthon/goormthon/goormthon/DaumMap.embeddedframework/KakaoBridgeHeader.h;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

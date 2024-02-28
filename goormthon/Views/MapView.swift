@@ -1,11 +1,11 @@
 import SwiftUI
 
-struct ContentView: View {
+struct MapView: View {
     var body: some View {
-        MapView()
+        KakaoMapWrapper()
     }
 }
 
 #Preview {
-    ContentView()
+    MapView()
 }
