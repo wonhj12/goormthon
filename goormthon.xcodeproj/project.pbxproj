@@ -39,6 +39,7 @@
 		F7818CF62B8FE0D600437773 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7818CF52B8FE0D600437773 /* LoadingView.swift */; };
 		F7818CF82B8FE15300437773 /* goormthonApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7818CF72B8FE15300437773 /* goormthonApp.swift */; };
 		F7818CFA2B8FE16A00437773 /* Extesion.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7818CF92B8FE16A00437773 /* Extesion.swift */; };
+		F7B1BC762B8FF057006399E5 /* locations.json in Resources */ = {isa = PBXBuildFile; fileRef = F7B1BC752B8FF057006399E5 /* locations.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -76,6 +77,7 @@
 		F7818CF52B8FE0D600437773 /* LoadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		F7818CF72B8FE15300437773 /* goormthonApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = goormthonApp.swift; sourceTree = "<group>"; };
 		F7818CF92B8FE16A00437773 /* Extesion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extesion.swift; sourceTree = "<group>"; };
+		F7B1BC752B8FF057006399E5 /* locations.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = locations.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -187,6 +189,7 @@
 				F70685E62B8F426100405F44 /* User.swift */,
 				F74F48EF2B8EEC8B00CFC786 /* Location.swift */,
 				F74F48F12B8EED3D00CFC786 /* LocationData.swift */,
+				F7B1BC752B8FF057006399E5 /* locations.json */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -269,6 +272,7 @@
 			files = (
 				F74F48C82B8EBE6F00CFC786 /* Preview Assets.xcassets in Resources */,
 				F74F48CF2B8EBE8700CFC786 /* .gitignore in Resources */,
+				F7B1BC762B8FF057006399E5 /* locations.json in Resources */,
 				F74F48C52B8EBE6F00CFC786 /* Assets.xcassets in Resources */,
 				F74F48D12B8EBEA800CFC786 /* .gitattributes in Resources */,
 			);

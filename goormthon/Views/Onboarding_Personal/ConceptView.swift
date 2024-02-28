@@ -4,7 +4,7 @@ struct ConceptView: View {
     @FocusState private var focused: Bool
     @State private var text: String = ""
     
-    private let placeholder = "예시 문장)\n평소에 사람을 좋아하고 잘 따름.\n입질은 없는 편이지만 장난을 좋아해요.\n활동적인 편이라  넓은 공간을 뛰어 노는 것을 좋아합니다."
+    private let placeholder = "예시 문장)\n똘이의 생일이라서 더 특별 했으면 좋겠다.\n똘이와 자연 속에서 힐링하고 싶어요.\n실내 여행지만 다니고 싶어요."
     
     @ObservedObject var viewModel : UserViewModel
     
