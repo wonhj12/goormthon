@@ -18,69 +18,69 @@ struct OnboardingNameView: View {
     
     @State private var petName = ""
     var body: some View {
-        
-        VStack(alignment: .leading){
-            HStack{
-                Text("제주로 함께\n떠나볼까요? 🐾")
-                    .font(.largeTitle)
-                    .bold()
-                    .foregroundStyle(.gray500)
-                //           .shadow(radius: 4, x: 0, y: 4)
-                    .padding(.leading,16)
-                    .padding(.top,34)
+        NavigationView {
+            VStack(alignment: .leading){
+                HStack{
+                    Text("제주로 함께\n떠나볼까요? 🐾")
+                        .font(.largeTitle)
+                        .bold()
+                        .foregroundStyle(.gray500)
+                    //           .shadow(radius: 4, x: 0, y: 4)
+                        .padding(.leading,16)
+                        .padding(.top,34)
+                    
+                    Spacer()
+                }
                 
-                Spacer()
-            }
-            
-            HStack{
-                Text("여행에 함께 할 반려가족의 이름을 알려주세요.")
-                    .font(.footnote)
-                    .foregroundStyle(.gray500)
-                    .padding(.leading,16)
-                    .padding(.top,51)
-                
-                Spacer()
-            }
-            
-            HStack{
-                TextField("반려 가족의 이름", text: $viewModel.user.petName)
-                    .padding(.leading ,16)
-                //.background(.beigie400)
-                    .background
-                {
-                    RoundedRectangle(cornerRadius: 10)
-                        .foregroundColor(.beigie200)
-                        .frame(width: 360,height: 42)
+                HStack{
+                    Text("여행에 함께 할 반려가족의 이름을 알려주세요.")
                         .font(.footnote)
+                        .foregroundStyle(.gray500)
+                        .padding(.leading,16)
+                        .padding(.top,51)
+                    
+                    Spacer()
                 }
-                .padding(.top,8)
+                
+                HStack{
+                    TextField("반려 가족의 이름", text: $viewModel.user.petName)
+                        .padding(.leading ,16)
+                    //.background(.beigie400)
+                        .background
+                    {
+                        RoundedRectangle(cornerRadius: 10)
+                            .foregroundColor(.beigie200)
+                            .frame(width: 360,height: 42)
+                            .font(.footnote)
+                    }
+                    .padding(.top,8)
+                    
+                    Spacer()
+                }
                 
                 Spacer()
-            }
-            
-            Spacer()
-            
-            HStack(alignment: .center){
-                Button(){
-                    
+                
+                HStack(alignment: .center){
+                    Button(){
+                        
+                    }
+                    label :
+                    {       Text("다음")
+                            .font(.headline)
+                            .foregroundStyle(viewModel.user.petName != "" ? .white : .gray300)
+                    }
+                    .background{
+                        RoundedRectangle(cornerRadius: 10)
+                            .foregroundColor(viewModel.user.petName != "" ? .yellow300 : .yellow50)
+                            .frame(width: 360,height: 42)
+                            .shadow(radius:  4, x: 0, y:viewModel.user.petName != "" ? 4 : 0)
+                        
+                    }
+                    .frame(width: 360,height: 42)
+                    .padding(.leading,16)
+                    .padding(.bottom,50)
                 }
-                label :
-                {       Text("다음")
-                        .font(.headline)
-                        .foregroundStyle(viewModel.user.petName != "" ? .white : .gray300)
-                }
-                .background{
-                    RoundedRectangle(cornerRadius: 10)
-                        .foregroundColor(viewModel.user.petName != "" ? .yellow300 : .yellow50)
-                        .frame(width: 360,height: 42)
-                        .shadow(radius:  4, x: 0, y:viewModel.user.petName != "" ? 4 : 0)
-                    
-                }
-                .frame(width: 360,height: 42)
-                .padding(.leading,16)
-                .padding(.bottom,50)
-            }
-        }
+            }}
     }
 }
 
