@@ -40,7 +40,7 @@ struct OnBoardingAgeView: View {
                     
                     Button(){
                 
-                        self.viewModel.user.petPersonality = "대형견"
+                       
           
                     }
                     label :

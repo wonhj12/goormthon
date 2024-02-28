@@ -43,7 +43,7 @@ struct OnBoardingSizeView: View {
                         // 다른 버튼 비활성화
                         self.isSecondButtonActive = false
                         self.isThirdButtonActive = false
-                        self.viewModel.user.petSize = "대형견"
+                        self.viewModel.user.petSize = "Large"
           
                     }
                     label :
@@ -100,7 +100,7 @@ struct OnBoardingSizeView: View {
                         // 다른 버튼 비활성화
                         self.isFirstButtonActive = false
                         self.isThirdButtonActive = false
-                        self.viewModel.user.petSize = "중형견"
+                        self.viewModel.user.petSize = "Medium"
 
                     }
                     label :
@@ -156,7 +156,7 @@ struct OnBoardingSizeView: View {
                         // 다른 버튼 비활성화
                         self.isSecondButtonActive = false
                         self.isFirstButtonActive = false
-                        self.viewModel.user.petSize = "소형견"
+                        self.viewModel.user.petSize = "Small"
            
                     }
                     label :
