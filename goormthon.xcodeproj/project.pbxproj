@@ -22,6 +22,9 @@
 		F70685ED2B8F864400405F44 /* LocationPreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F70685EC2B8F864400405F44 /* LocationPreviewView.swift */; };
 		F70685EF2B8F9F6900405F44 /* MapProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F70685EE2B8F9F6900405F44 /* MapProfileView.swift */; };
 		F70685F12B8FA2F400405F44 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F70685F02B8FA2F400405F44 /* DetailView.swift */; };
+		F747496D2B8FB70B00880D35 /* Home View in Resources */ = {isa = PBXBuildFile; fileRef = F747496C2B8FB70B00880D35 /* Home View */; };
+		F747496F2B8FB72700880D35 /* OnBoardingName.swift in Sources */ = {isa = PBXBuildFile; fileRef = F747496E2B8FB72700880D35 /* OnBoardingName.swift */; };
+		F74749712B8FB77D00880D35 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F74749702B8FB77D00880D35 /* Extension.swift */; };
 		F74F48C12B8EBE6E00CFC786 /* goormthonApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F74F48C02B8EBE6E00CFC786 /* goormthonApp.swift */; };
 		F74F48C32B8EBE6E00CFC786 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F74F48C22B8EBE6E00CFC786 /* ContentView.swift */; };
 		F74F48C52B8EBE6F00CFC786 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F74F48C42B8EBE6F00CFC786 /* Assets.xcassets */; };
@@ -53,6 +56,9 @@
 		F70685EC2B8F864400405F44 /* LocationPreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationPreviewView.swift; sourceTree = "<group>"; };
 		F70685EE2B8F9F6900405F44 /* MapProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapProfileView.swift; sourceTree = "<group>"; };
 		F70685F02B8FA2F400405F44 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		F747496C2B8FB70B00880D35 /* Home View */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "Home View"; sourceTree = "<group>"; };
+		F747496E2B8FB72700880D35 /* OnBoardingName.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnBoardingName.swift; sourceTree = "<group>"; };
+		F74749702B8FB77D00880D35 /* Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 		F74F48BD2B8EBE6E00CFC786 /* goormthon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = goormthon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F74F48C02B8EBE6E00CFC786 /* goormthonApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = goormthonApp.swift; sourceTree = "<group>"; };
 		F74F48C22B8EBE6E00CFC786 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -96,6 +102,7 @@
 		F70685E82B8F42A000405F44 /* Onboarding_Pet */ = {
 			isa = PBXGroup;
 			children = (
+				F747496E2B8FB72700880D35 /* OnBoardingName.swift */,
 				F70685DC2B8F41F300405F44 /* OnBoardingAgeView.swift */,
 				F70685DB2B8F41F300405F44 /* OnboardingNameView.swift */,
 				F70685D82B8F41F300405F44 /* OnBoardingPersonalView.swift */,
@@ -142,6 +149,7 @@
 				CDDC8C382B8EFBC4000669E9 /* ViewModels */,
 				F74F48E82B8EC33400CFC786 /* Views */,
 				F74F48EE2B8EEC8200CFC786 /* Models */,
+				F74749702B8FB77D00880D35 /* Extension.swift */,
 				F74F48D22B8EBFE800CFC786 /* Info.plist */,
 				F74F48C02B8EBE6E00CFC786 /* goormthonApp.swift */,
 				F74F48C22B8EBE6E00CFC786 /* ContentView.swift */,
@@ -162,6 +170,7 @@
 		F74F48E82B8EC33400CFC786 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				F747496C2B8FB70B00880D35 /* Home View */,
 				F70685EB2B8F79FD00405F44 /* Maps */,
 				F70685E82B8F42A000405F44 /* Onboarding_Pet */,
 				F74F48FA2B8F393C00CFC786 /* Onboarding_Personal */,
@@ -249,6 +258,7 @@
 			files = (
 				F74F48C82B8EBE6F00CFC786 /* Preview Assets.xcassets in Resources */,
 				F74F48CF2B8EBE8700CFC786 /* .gitignore in Resources */,
+				F747496D2B8FB70B00880D35 /* Home View in Resources */,
 				F74F48C52B8EBE6F00CFC786 /* Assets.xcassets in Resources */,
 				F74F48D12B8EBEA800CFC786 /* .gitattributes in Resources */,
 			);
@@ -263,12 +273,14 @@
 			files = (
 				F74F48F92B8F0D7A00CFC786 /* MarkerView.swift in Sources */,
 				F74F48F22B8EED3D00CFC786 /* LocationData.swift in Sources */,
+				F747496F2B8FB72700880D35 /* OnBoardingName.swift in Sources */,
 				F74F48C32B8EBE6E00CFC786 /* ContentView.swift in Sources */,
 				F70685DE2B8F41F300405F44 /* OnBoardingPersonalView.swift in Sources */,
 				CDDC8C372B8EFB92000669E9 /* LocationInfoView.swift in Sources */,
 				CDDC8C3A2B8EFBD9000669E9 /* LocationInfoViewModel.swift in Sources */,
 				F74F48EC2B8EC44400CFC786 /* MapView.swift in Sources */,
 				F70685EA2B8F66B000405F44 /* ConceptView.swift in Sources */,
+				F74749712B8FB77D00880D35 /* Extension.swift in Sources */,
 				F70685F12B8FA2F400405F44 /* DetailView.swift in Sources */,
 				CDDC8C312B8EF96D000669E9 /* NetworkManager.swift in Sources */,
 				F70685EF2B8F9F6900405F44 /* MapProfileView.swift in Sources */,
@@ -419,7 +431,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"goormthon/Preview Content\"";
-				DEVELOPMENT_TEAM = K7698SUQ4K;
+				DEVELOPMENT_TEAM = 785KK9R5M8;
 				ENABLE_PREVIEWS = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -440,7 +452,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.dasoya.goormthon;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hajin.goormthon;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
@@ -462,7 +474,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"goormthon/Preview Content\"";
-				DEVELOPMENT_TEAM = K7698SUQ4K;
+				DEVELOPMENT_TEAM = 785KK9R5M8;
 				ENABLE_PREVIEWS = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -483,7 +495,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.dasoya.goormthon;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hajin.goormthon;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
