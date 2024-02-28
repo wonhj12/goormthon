@@ -1,10 +1,3 @@
-//
-//  ContentView.swift
-//  goormthon
-//
-//  Created by hajin on 2/28/24.
-//
-
 import SwiftUI
 
 struct ContentView: View {
