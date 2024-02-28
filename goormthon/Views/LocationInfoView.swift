@@ -19,15 +19,15 @@ struct LocationInfoView: View {
      
         NavigationView{
                     List{
-                        ForEach($network.posts, id: \.self) { $result in
-                            HStack{
-                                URLImage(urlString: result.urlToImage)
-                                    .frame(width: 130, height: 70)
-                                    .background(Color.gray)
-                                Text(result.title)
-                                    .bold()
-                            }.padding(3)
-                        }
+//                        ForEach($network.posts, id: \.self) { $result in
+//                            HStack{
+//                                URLImage(urlString: result.urlToImage)
+//                                    .frame(width: 130, height: 70)
+//                                    .background(Color.gray)
+//                                Text(result.title)
+//                                    .bold()
+//                            }.padding(3)
+//                        }
                     }.navigationTitle("INFO")
                 }.onAppear {
                     network.fetchData()

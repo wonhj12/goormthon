@@ -3,6 +3,9 @@ import SwiftUI
 struct RecommendTileView: View {
     let location: Location
     
+    let baseURLString = ""
+
+     
     var body: some View {
         ZStack {
             RoundedRectangle(cornerRadius: 10)
@@ -12,11 +15,30 @@ struct RecommendTileView: View {
             
             HStack {
                 if let imageName = location.imageName {
-                    Image(imageName)
-                        .resizable()
+                    
+                    AsyncImage(url: URL(string: imageName),
+                               scale: 3) { phase in
+                        switch phase {
+                        case .empty:
+                            ZStack {
+                                Color.gray
+                                ProgressView()
+                            }
+                        case .success(let image):
+                            image.resizable()
+                        case .failure(let error):
+                            Text(error.localizedDescription)
+                            // use placeholder for production app
+                        @unknown default:
+                            EmptyView()
+                        }}
+                               //.resizable()
                         .clipShape(Circle())
                         .frame(width: 64,height: 64)
                         .aspectRatio(contentMode: .fill)
+                        
+                 //   Image(imageName)
+                        
                 } else {
                     Circle()
                         .foregroundStyle(.gray100)
