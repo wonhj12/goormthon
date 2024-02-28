@@ -40,6 +40,9 @@ extension MapView {
                         .shadow(radius: 10)
                         .padding(.bottom)
                         .transition(.asymmetric(insertion: .move(edge: .trailing), removal: .move(edge: .leading)))
+                        .onTapGesture {
+                            vm.showDetail.toggle()
+                        }
                         .gesture(DragGesture(minimumDistance: 0, coordinateSpace: .local)
                             .onEnded({ value in
                                 // Left
@@ -52,11 +55,16 @@ extension MapView {
 //                                    vm.prevLocation()
 //                                }
                             }))
+
+                        .sheet(isPresented: $vm.showDetail) {
+                            DetailView(location: location)
+                        }
                 }
             }
         }
     }
     
+    // 지도
     private var mapLayer: some View {
         Map(position: $vm.cameraPosition) {
             ForEach(0 ..< vm.locations.count, id: \.self) { index in
@@ -71,6 +79,7 @@ extension MapView {
                 }
             }
             
+            // 경로 선
             MapPolyline(coordinates: vm.locations.map{$0.coordinates})
                 .stroke(.gray200, style: StrokeStyle(lineWidth: 3, lineCap: .round, dash: [5]))
         }

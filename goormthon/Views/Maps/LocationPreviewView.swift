@@ -6,6 +6,7 @@ struct LocationPreviewView: View {
     
     var body: some View {
         HStack(spacing: 12) {
+            // 이미지
             if let imageName = location.imageName {
                 Image(imageName)
                     .resizable()
@@ -35,6 +36,7 @@ struct LocationPreviewView: View {
                 
                 Spacer()
                 
+                // 키워드
                 Text(location.hashTags)
                     .font(.subheadline)
                     .foregroundStyle(.gray500)
@@ -45,6 +47,7 @@ struct LocationPreviewView: View {
             
             Spacer()
             
+            // index
             VStack {
                 Image(systemName: "\(index).circle.fill")
                     .foregroundStyle(.yellow400)
