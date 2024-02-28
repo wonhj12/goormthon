@@ -32,9 +32,10 @@ extension MapView {
     
     private var mapLayer: some View {
         Map(position: $vm.cameraPosition) {
-            ForEach(vm.locations) { location in
+            ForEach(0 ..< vm.locations.count, id: \.self) { index in
+                let location = vm.locations[index]
                 Annotation("", coordinate: location.coordinates) {
-                    MarkerView()
+                    MarkerView(num: index + 1)
                         .scaleEffect(vm.location == location ? 1 : 0.7)
                         .shadow(radius: 10)
                         .onTapGesture {
@@ -44,8 +45,7 @@ extension MapView {
             }
             
             MapPolyline(coordinates: vm.locations.map{$0.coordinates})
-                .stroke(.black, style: StrokeStyle(lineWidth: 1, dash: [10]))
-                
+                .stroke(.gray200, style: StrokeStyle(lineWidth: 3, lineCap: .round, dash: [5]))
         }
     }
 }
