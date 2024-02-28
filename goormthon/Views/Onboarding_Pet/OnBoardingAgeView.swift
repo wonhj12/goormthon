@@ -2,6 +2,7 @@ import SwiftUI
 
 struct OnBoardingAgeView: View {
     @ObservedObject var viewModel : UserViewModel
+    @FocusState private var focused: Bool
     
     init(viewModel: UserViewModel) {
         self.viewModel = viewModel
@@ -27,6 +28,7 @@ struct OnBoardingAgeView: View {
             } label: {
                 HStack(alignment: .bottom) {
                     TextField("", text: $viewModel.user.petAge)
+                        .focused($focused)
                         .font(.system(size: 91))
                         .bold()
                         .keyboardType(.decimalPad)
@@ -69,6 +71,9 @@ struct OnBoardingAgeView: View {
         }
         .navigationDestination(isPresented: $isDestinationActive) {
             OnBoardingPersonalView(viewModel: viewModel)
+        }
+        .onAppear {
+            focused = true
         }
     }
 }

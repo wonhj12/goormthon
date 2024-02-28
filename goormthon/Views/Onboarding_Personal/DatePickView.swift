@@ -35,7 +35,7 @@ struct DatePickView: View {
                 Text("여행 일정을 입력해 주세요.")
                     .foregroundStyle(.gray500)
                     .padding(.leading,16)
-                    .padding(.top, 8)
+                    .padding(.top, 34)
                 
                 Spacer()
             }

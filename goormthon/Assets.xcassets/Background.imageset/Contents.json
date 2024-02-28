@@ -1,15 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "Frame 10.png",
+      "filename" : "BG.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
+      "filename" : "BGx2.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
+      "filename" : "BGx3.png",
       "idiom" : "universal",
       "scale" : "3x"
     }

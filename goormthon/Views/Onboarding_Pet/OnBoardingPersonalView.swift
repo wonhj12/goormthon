@@ -20,9 +20,7 @@ struct OnBoardingPersonalView: View {
                 .frame(maxWidth: .infinity, alignment: .leading)
                 .foregroundStyle(.gray500)
                 .padding(EdgeInsets(top: 34, leading: 16, bottom: 0, trailing: 16))
-                .onAppear{
-                    viewModel.user.petAge = String(3)
-                }
+                .fixedSize()
             
             // 입력
             Text("AI 가 조금 더 컨셉에 맞게 추천해드려요!")

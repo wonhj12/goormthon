@@ -81,11 +81,6 @@ extension MapView {
                                 if (value.translation.width < 0) {
                                     vm.nextLocation()
                                 }
-                                
-                                //                                // Right
-                                //                                if (value.translation.width > 0) {
-                                //                                    vm.prevLocation()
-                                //                                }
                             }))
                     
                         .sheet(isPresented: $vm.showDetail) {
