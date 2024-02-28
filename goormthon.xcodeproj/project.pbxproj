@@ -13,6 +13,7 @@
 		F74F48C82B8EBE6F00CFC786 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F74F48C72B8EBE6F00CFC786 /* Preview Assets.xcassets */; };
 		F74F48CF2B8EBE8700CFC786 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = F74F48CE2B8EBE8700CFC786 /* .gitignore */; };
 		F74F48D12B8EBEA800CFC786 /* .gitattributes in Resources */ = {isa = PBXBuildFile; fileRef = F74F48D02B8EBEA800CFC786 /* .gitattributes */; };
+		F74F48D42B8EC01600CFC786 /* DaumMap.embeddedframework in Resources */ = {isa = PBXBuildFile; fileRef = F74F48D32B8EC01600CFC786 /* DaumMap.embeddedframework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,8 @@
 		F74F48C72B8EBE6F00CFC786 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F74F48CE2B8EBE8700CFC786 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		F74F48D02B8EBEA800CFC786 /* .gitattributes */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitattributes; sourceTree = "<group>"; };
+		F74F48D22B8EBFE800CFC786 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		F74F48D32B8EC01600CFC786 /* DaumMap.embeddedframework */ = {isa = PBXFileReference; lastKnownFileType = folder; path = DaumMap.embeddedframework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +60,8 @@
 		F74F48BF2B8EBE6E00CFC786 /* goormthon */ = {
 			isa = PBXGroup;
 			children = (
+				F74F48D32B8EC01600CFC786 /* DaumMap.embeddedframework */,
+				F74F48D22B8EBFE800CFC786 /* Info.plist */,
 				F74F48C02B8EBE6E00CFC786 /* goormthonApp.swift */,
 				F74F48C22B8EBE6E00CFC786 /* ContentView.swift */,
 				F74F48C42B8EBE6F00CFC786 /* Assets.xcassets */,
@@ -131,6 +136,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F74F48D42B8EC01600CFC786 /* DaumMap.embeddedframework in Resources */,
 				F74F48C82B8EBE6F00CFC786 /* Preview Assets.xcassets in Resources */,
 				F74F48CF2B8EBE8700CFC786 /* .gitignore in Resources */,
 				F74F48C52B8EBE6F00CFC786 /* Assets.xcassets in Resources */,
@@ -283,6 +289,7 @@
 				DEVELOPMENT_TEAM = 785KK9R5M8;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = goormthon/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -312,6 +319,7 @@
 				DEVELOPMENT_TEAM = 785KK9R5M8;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = goormthon/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
