@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CDDC8C312B8EF96D000669E9 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDDC8C302B8EF96D000669E9 /* NetworkManager.swift */; };
+		CDDC8C352B8EFB65000669E9 /* InfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDDC8C342B8EFB65000669E9 /* InfoView.swift */; };
+		CDDC8C372B8EFB92000669E9 /* LocationInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDDC8C362B8EFB92000669E9 /* LocationInfoView.swift */; };
+		CDDC8C3A2B8EFBD9000669E9 /* LocationInfoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDDC8C392B8EFBD9000669E9 /* LocationInfoViewModel.swift */; };
+		CDDC8C3C2B8F0DD3000669E9 /* RequestAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDDC8C3B2B8F0DD3000669E9 /* RequestAPI.swift */; };
 		F74F48C12B8EBE6E00CFC786 /* goormthonApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F74F48C02B8EBE6E00CFC786 /* goormthonApp.swift */; };
 		F74F48C32B8EBE6E00CFC786 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F74F48C22B8EBE6E00CFC786 /* ContentView.swift */; };
 		F74F48C52B8EBE6F00CFC786 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F74F48C42B8EBE6F00CFC786 /* Assets.xcassets */; };
@@ -27,6 +32,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CDDC8C302B8EF96D000669E9 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		CDDC8C342B8EFB65000669E9 /* InfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoView.swift; sourceTree = "<group>"; };
+		CDDC8C362B8EFB92000669E9 /* LocationInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationInfoView.swift; sourceTree = "<group>"; };
+		CDDC8C392B8EFBD9000669E9 /* LocationInfoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationInfoViewModel.swift; sourceTree = "<group>"; };
+		CDDC8C3B2B8F0DD3000669E9 /* RequestAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestAPI.swift; sourceTree = "<group>"; };
 		F74F48BD2B8EBE6E00CFC786 /* goormthon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = goormthon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F74F48C02B8EBE6E00CFC786 /* goormthonApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = goormthonApp.swift; sourceTree = "<group>"; };
 		F74F48C22B8EBE6E00CFC786 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -67,6 +77,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CDDC8C382B8EFBC4000669E9 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				CDDC8C302B8EF96D000669E9 /* NetworkManager.swift */,
+				CDDC8C392B8EFBD9000669E9 /* LocationInfoViewModel.swift */,
+				CDDC8C3B2B8F0DD3000669E9 /* RequestAPI.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
 		F74F48B42B8EBE6E00CFC786 = {
 			isa = PBXGroup;
 			children = (
@@ -89,6 +109,7 @@
 		F74F48BF2B8EBE6E00CFC786 /* goormthon */ = {
 			isa = PBXGroup;
 			children = (
+				CDDC8C382B8EFBC4000669E9 /* ViewModels */,
 				F74F48E82B8EC33400CFC786 /* Views */,
 				F74F48D32B8EC01600CFC786 /* DaumMap.embeddedframework */,
 				F74F48D22B8EBFE800CFC786 /* Info.plist */,
@@ -128,6 +149,8 @@
 			children = (
 				F74F48E92B8EC34400CFC786 /* KakaoMapWrapper.swift */,
 				F74F48EB2B8EC44400CFC786 /* MapView.swift */,
+				CDDC8C342B8EFB65000669E9 /* InfoView.swift */,
+				CDDC8C362B8EFB92000669E9 /* LocationInfoView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -206,9 +229,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				F74F48C32B8EBE6E00CFC786 /* ContentView.swift in Sources */,
+				CDDC8C372B8EFB92000669E9 /* LocationInfoView.swift in Sources */,
+				CDDC8C3A2B8EFBD9000669E9 /* LocationInfoViewModel.swift in Sources */,
 				F74F48EC2B8EC44400CFC786 /* MapView.swift in Sources */,
+				CDDC8C312B8EF96D000669E9 /* NetworkManager.swift in Sources */,
 				F74F48EA2B8EC34400CFC786 /* KakaoMapWrapper.swift in Sources */,
 				F74F48C12B8EBE6E00CFC786 /* goormthonApp.swift in Sources */,
+				CDDC8C3C2B8F0DD3000669E9 /* RequestAPI.swift in Sources */,
+				CDDC8C352B8EFB65000669E9 /* InfoView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -356,6 +384,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -364,7 +393,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.hajin.goormthon;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = /Users/hajin/Documents/9oormthon/goormthon/goormthon/DaumMap.embeddedframework/KakaoBridgeHeader.h;
+				SWIFT_OBJC_BRIDGING_HEADER = /Users/dasoya/Documents/GitHub/goormthon/goormthon/DaumMap.embeddedframework/KakaoBridgeHeader.h;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -392,6 +421,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -400,7 +430,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.hajin.goormthon;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = /Users/hajin/Documents/9oormthon/goormthon/goormthon/DaumMap.embeddedframework/KakaoBridgeHeader.h;
+				SWIFT_OBJC_BRIDGING_HEADER = /Users/dasoya/Documents/GitHub/goormthon/goormthon/DaumMap.embeddedframework/KakaoBridgeHeader.h;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
