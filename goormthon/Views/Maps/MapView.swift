@@ -10,24 +10,51 @@ struct MapView: View {
                 .ignoresSafeArea()
             
             VStack {
+                profile // 상단 profile info
+                
                 Spacer()
                 
-                locationsList // 하단 장소 리스트
+                locationPreview // 하단 preview
             }
-            .padding()
         }
     }
 }
 
 extension MapView {
-    // 하단 장소 리스트
-    private var locationsList: some View {
-        LocationsListView()
-            .frame(height: 300)
-            .frame(maxWidth: .infinity)
-            .background(.ultraThinMaterial)
-            .cornerRadius(10)
-            .shadow(radius: 20)
+    // 상단 profile info
+    private var profile: some View {
+        VStack {
+            MapProfileView()
+        }
+        .padding(.top)
+    }
+    
+    // 하단 preview
+    private var locationPreview: some View {
+        ZStack {
+            ForEach(0 ..< vm.locations.count, id: \.self) { index in
+                let location = vm.locations[index]
+                
+                if (vm.location == location) {
+                    LocationPreviewView(index: index + 1, location: location)
+                        .shadow(radius: 10)
+                        .padding(.bottom)
+                        .transition(.asymmetric(insertion: .move(edge: .trailing), removal: .move(edge: .leading)))
+                        .gesture(DragGesture(minimumDistance: 0, coordinateSpace: .local)
+                            .onEnded({ value in
+                                // Left
+                                if (value.translation.width < 0) {
+                                    vm.nextLocation()
+                                }
+                                
+//                                // Right
+//                                if (value.translation.width > 0) {
+//                                    vm.prevLocation()
+//                                }
+                            }))
+                }
+            }
+        }
     }
     
     private var mapLayer: some View {

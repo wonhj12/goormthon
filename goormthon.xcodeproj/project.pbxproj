@@ -21,6 +21,8 @@
 		F70685E72B8F426200405F44 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = F70685E62B8F426100405F44 /* User.swift */; };
 		F70685EA2B8F66B000405F44 /* ConceptView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F70685E92B8F66B000405F44 /* ConceptView.swift */; };
 		F70685ED2B8F864400405F44 /* LocationPreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F70685EC2B8F864400405F44 /* LocationPreviewView.swift */; };
+		F70685EF2B8F9F6900405F44 /* MapProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F70685EE2B8F9F6900405F44 /* MapProfileView.swift */; };
+		F70685F12B8FA2F400405F44 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F70685F02B8FA2F400405F44 /* DetailView.swift */; };
 		F74F48C12B8EBE6E00CFC786 /* goormthonApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F74F48C02B8EBE6E00CFC786 /* goormthonApp.swift */; };
 		F74F48C32B8EBE6E00CFC786 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F74F48C22B8EBE6E00CFC786 /* ContentView.swift */; };
 		F74F48C52B8EBE6F00CFC786 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F74F48C42B8EBE6F00CFC786 /* Assets.xcassets */; };
@@ -51,6 +53,8 @@
 		F70685E62B8F426100405F44 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		F70685E92B8F66B000405F44 /* ConceptView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConceptView.swift; sourceTree = "<group>"; };
 		F70685EC2B8F864400405F44 /* LocationPreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationPreviewView.swift; sourceTree = "<group>"; };
+		F70685EE2B8F9F6900405F44 /* MapProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapProfileView.swift; sourceTree = "<group>"; };
+		F70685F02B8FA2F400405F44 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		F74F48BD2B8EBE6E00CFC786 /* goormthon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = goormthon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F74F48C02B8EBE6E00CFC786 /* goormthonApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = goormthonApp.swift; sourceTree = "<group>"; };
 		F74F48C22B8EBE6E00CFC786 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -110,7 +114,9 @@
 				F74F48F62B8EFC3400CFC786 /* LocationsListView.swift */,
 				F70685EC2B8F864400405F44 /* LocationPreviewView.swift */,
 				F74F48EB2B8EC44400CFC786 /* MapView.swift */,
+				F70685F02B8FA2F400405F44 /* DetailView.swift */,
 				F74F48F82B8F0D7A00CFC786 /* MarkerView.swift */,
+				F70685EE2B8F9F6900405F44 /* MapProfileView.swift */,
 			);
 			path = Maps;
 			sourceTree = "<group>";
@@ -266,7 +272,9 @@
 				CDDC8C3A2B8EFBD9000669E9 /* LocationInfoViewModel.swift in Sources */,
 				F74F48EC2B8EC44400CFC786 /* MapView.swift in Sources */,
 				F70685EA2B8F66B000405F44 /* ConceptView.swift in Sources */,
+				F70685F12B8FA2F400405F44 /* DetailView.swift in Sources */,
 				CDDC8C312B8EF96D000669E9 /* NetworkManager.swift in Sources */,
+				F70685EF2B8F9F6900405F44 /* MapProfileView.swift in Sources */,
 				F70685E12B8F41F300405F44 /* OnboardingNameView.swift in Sources */,
 				F74F48FC2B8F395000CFC786 /* DatePickView.swift in Sources */,
 				F70685E72B8F426200405F44 /* User.swift in Sources */,
