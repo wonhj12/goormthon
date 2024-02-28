@@ -10,11 +10,11 @@ import SwiftUI
 struct OnboardingNameView: View {
     
     @ObservedObject var viewModel : UserViewModel
-
-        init(viewModel: UserViewModel) {
-            self.viewModel = viewModel
-        }
-
+    
+    init(viewModel: UserViewModel) {
+        self.viewModel = viewModel
+    }
+    
     
     @State private var petName = ""
     var body: some View {
@@ -25,7 +25,7 @@ struct OnboardingNameView: View {
                     .font(.largeTitle)
                     .bold()
                     .foregroundStyle(.gray500)
-         //           .shadow(radius: 4, x: 0, y: 4)
+                //           .shadow(radius: 4, x: 0, y: 4)
                     .padding(.leading,16)
                     .padding(.top,34)
                 
@@ -38,34 +38,29 @@ struct OnboardingNameView: View {
                     .foregroundStyle(.gray500)
                     .padding(.leading,16)
                     .padding(.top,51)
-                    
+                
                 Spacer()
             }
             
             HStack{
-                
                 TextField("반려 가족의 이름", text: $viewModel.user.petName)
                     .padding(.leading ,16)
-                    //.background(.beigie400)
-                .background
+                //.background(.beigie400)
+                    .background
                 {
                     RoundedRectangle(cornerRadius: 10)
                         .foregroundColor(.beigie200)
                         .frame(width: 360,height: 42)
                         .font(.footnote)
-                     
-                
                 }
-                
                 .padding(.top,8)
                 
-                    
                 Spacer()
             }
             
             Spacer()
+            
             HStack(alignment: .center){
-                
                 Button(){
                     
                 }
@@ -79,16 +74,13 @@ struct OnboardingNameView: View {
                         .foregroundColor(viewModel.user.petName != "" ? .yellow300 : .yellow50)
                         .frame(width: 360,height: 42)
                         .shadow(radius:  4, x: 0, y:viewModel.user.petName != "" ? 4 : 0)
-                 
+                    
                 }
                 .frame(width: 360,height: 42)
                 .padding(.leading,16)
                 .padding(.bottom,50)
             }
-            
-      
         }
-        
     }
 }
 
