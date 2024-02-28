@@ -11,7 +11,7 @@ struct DatePickView: View {
         VStack(alignment: .leading) {
             // 타이틀
             HStack{
-                Text("여행 일정을\n등록해주세요! 🗓 ️")
+                Text("여행 일정을\n등록해주세요! 🗓")
                     .font(.largeTitle)
                     .bold()
                     .foregroundStyle(.gray500)
