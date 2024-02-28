@@ -6,11 +6,21 @@ struct ConceptView: View {
     
     private let placeholder = "예시 문장)\n평소에 사람을 좋아하고 잘 따름.\n입질은 없는 편이지만 장난을 좋아해요.\n활동적인 편이라  넓은 공간을 뛰어 노는 것을 좋아합니다."
     
+    @ObservedObject var viewModel : UserViewModel
+    
+    init(viewModel: UserViewModel, reload: Bool) {
+        self.viewModel = viewModel
+        self.reload = reload
+    }
+    
+    var reload: Bool = false
+    
+    @State private var isDestinationActive: Bool = false
     var body: some View {
         VStack(alignment: .leading) {
             // 타이틀
             HStack{
-                Text("이번 여행의\n컨셉이 있으신가요? 😎")
+                Text("\(viewModel.user.petName)와\n함께하고 싶은 여행은?😎")
                     .font(.largeTitle)
                     .bold()
                     .foregroundStyle(.gray500)
@@ -22,7 +32,7 @@ struct ConceptView: View {
             }
             
             HStack{
-                Text("AI 가 조금 더 컨셉에 맞게 추천해드려요!")
+                Text(reload ? "원하는 여행에 대해서 더 자세히 알려주세요!" : "AI 가 조금 더 컨셉에 맞게 추천해드려요!")
                     .foregroundStyle(.gray500)
                     .padding(.leading,16)
                     .padding(.top, 50)
@@ -55,30 +65,27 @@ struct ConceptView: View {
             
             Spacer()
             
-            HStack(alignment: .center) {
-                Button(){
-                    
-                }
-                label :
-                {       Text("여행지 추천 받기")
-                        .font(.headline)
-                        .foregroundStyle(text != "" ? .white : .gray300)
-                }
-                .background{
-                    RoundedRectangle(cornerRadius: 10)
-                        .foregroundColor(text != "" ? .yellow300 : .yellow50)
-                        .frame(width: 360, height: 42)
-                        .shadow(radius: 4, x: 0, y: text != "" ? 4 : 0)
-                    
-                }
-                .frame(width: 360,height: 42)
-                .padding(.leading,16)
-                .padding(.bottom,50)
+            Button() {
+                isDestinationActive = text != ""
+            } label: {
+                RoundedRectangle(cornerRadius: 10)
+                    .foregroundColor(text != "" ? .yellow300 : .yellow50)
+                    .frame(width: 360, height: 52)
+                    .shadow(radius: text != "" ? 4 : 0, x: 0, y: text != "" ? 4 : 0)
+                    .overlay {
+                        Text(reload ? "다시 여행지 추천 받기" : "여행지 추천 받기")
+                            .foregroundStyle(.white)
+                    }
             }
+            .frame(width: 360, height: 52)
+            .padding(EdgeInsets(top: 0, leading: 16, bottom: 50, trailing: 16))
+        }
+        .navigationDestination(isPresented: $isDestinationActive) {
+            LoadingView(viewModel: viewModel, state: 2)
         }
     }
 }
 
 #Preview {
-    ConceptView()
+    ConceptView(viewModel: UserViewModel(user: User(petName: "또리", petSize: "", petAge: "", petPersonality: "", tripDate: "", tripConcept: "", tags: "#대형견#활발한#뛰는걸 좋아하는")), reload: false)
 }

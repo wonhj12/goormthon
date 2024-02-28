@@ -1,9 +1,15 @@
 import SwiftUI
 
 struct MapProfileView: View {
+    @ObservedObject var viewModel : UserViewModel
+    
+    init(viewModel: UserViewModel) {
+        self.viewModel = viewModel
+    }
+    
     var body: some View {
         VStack(alignment: .leading) {
-            Text("활발하고 뛰어노는걸 좋아하는\nUsername를 위한 여행 코스🍊")
+            Text("활발하고 뛰어노는걸 좋아하는\n\(viewModel.user.petName)를 위한 여행 코스🍊")
                 .foregroundStyle(.gray500)
                 .font(.callout)
                 .frame(maxWidth: .infinity, alignment: .leading)
@@ -17,5 +23,5 @@ struct MapProfileView: View {
 }
 
 #Preview {
-    MapProfileView()
+    MapProfileView(viewModel: UserViewModel(user: User(petName: "또리", petSize: "", petAge: "", petPersonality: "", tripDate: "", tripConcept: "", tags: "#대형견#활발한#뛰는걸 좋아하는")))
 }

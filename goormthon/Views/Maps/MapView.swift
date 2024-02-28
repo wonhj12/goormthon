@@ -4,6 +4,14 @@ import MapKit
 struct MapView: View {
     @EnvironmentObject private var vm: MapViewModel
     
+    @State private var reload: Bool = false
+    
+    @ObservedObject var viewModel : UserViewModel
+    
+    init(viewModel: UserViewModel) {
+        self.viewModel = viewModel
+    }
+    
     var body: some View {
         ZStack {
             mapLayer
@@ -11,12 +19,36 @@ struct MapView: View {
             
             VStack {
                 profile // 상단 profile info
+                    .padding(.bottom, 8)
+                
+                HStack {
+                    Spacer()
+                    
+                    Button {
+                        reload = true
+                    } label: {
+                        ZStack {
+                            Circle()
+                                .frame(width: 44, height: 44)
+                                .foregroundStyle(.white)
+                            
+                            Image(systemName: "arrow.clockwise")
+                                .foregroundStyle(.gray200)
+                                .bold()
+                        }
+                        .padding(.horizontal)
+                    }
+                }
                 
                 Spacer()
                 
                 locationPreview // 하단 preview
             }
         }
+        .navigationDestination(isPresented: $reload) {
+            ConceptView(viewModel: viewModel, reload: true)
+        }
+        .toolbar(.hidden)
     }
 }
 
@@ -24,7 +56,7 @@ extension MapView {
     // 상단 profile info
     private var profile: some View {
         VStack {
-            MapProfileView()
+            MapProfileView(viewModel: viewModel)
         }
         .padding(.top)
     }
@@ -50,12 +82,12 @@ extension MapView {
                                     vm.nextLocation()
                                 }
                                 
-//                                // Right
-//                                if (value.translation.width > 0) {
-//                                    vm.prevLocation()
-//                                }
+                                //                                // Right
+                                //                                if (value.translation.width > 0) {
+                                //                                    vm.prevLocation()
+                                //                                }
                             }))
-
+                    
                         .sheet(isPresented: $vm.showDetail) {
                             DetailView(location: location)
                         }
@@ -87,6 +119,6 @@ extension MapView {
 }
 
 #Preview {
-    MapView()
+    MapView(viewModel: UserViewModel(user: User(petName: "또리", petSize: "", petAge: "", petPersonality: "", tripDate: "", tripConcept: "", tags: "#대형견#활발한#뛰는걸 좋아하는")))
         .environmentObject(MapViewModel())
 }

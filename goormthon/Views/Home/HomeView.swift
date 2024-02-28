@@ -1,8 +1,12 @@
 import SwiftUI
 
 struct HomeView: View {
-    @ObservedObject var viewModel : UserViewModel
-    @State private var isPresented = true
+    @ObservedObject var viewModel: UserViewModel
+    @State private var createTrip: Bool = false
+    
+    init(viewModel: UserViewModel) {
+        self.viewModel = viewModel
+    }
     
     var body: some View {
         VStack{
@@ -14,7 +18,7 @@ struct HomeView: View {
                 .padding(.bottom, 32)
             
             // 제목
-            Text("Username와 함께하는\n즐거운 제주여행! 🍊")
+            Text("\(viewModel.user.petName)와 함께하는\n즐거운 제주여행! 🍊")
                 .frame(maxWidth: .infinity, alignment: .leading)
                 .font(.title2.bold())
                 .foregroundStyle(.gray500)
@@ -23,7 +27,7 @@ struct HomeView: View {
             // 버튼
             HStack(alignment: .center) {
                 Button() {
-                    
+                    createTrip = true
                 } label: {
                     HStack {
                         Image(systemName: "plus.circle.fill")
@@ -61,9 +65,13 @@ struct HomeView: View {
             Spacer()
         }
         .ignoresSafeArea()
+        .navigationDestination(isPresented: $createTrip) {
+            DatePickView(viewModel: viewModel)
+        }
+        .toolbar(.hidden)
     }
 }
 
 #Preview {
-    HomeView(viewModel: UserViewModel(user: User(petName: "", petSize: "또리", petAge: "2", petPersonality: "", tripConcept: "")))
+    HomeView(viewModel: UserViewModel(user: User(petName: "", petSize: "또리", petAge: "2", petPersonality: "", tripDate: "", tripConcept: "", tags: "#대형견#활발한#뛰는걸 좋아하는")))
 }

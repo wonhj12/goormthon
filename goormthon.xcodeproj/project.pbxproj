@@ -12,18 +12,15 @@
 		CDDC8C3A2B8EFBD9000669E9 /* LocationInfoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDDC8C392B8EFBD9000669E9 /* LocationInfoViewModel.swift */; };
 		CDDC8C3C2B8F0DD3000669E9 /* RequestAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDDC8C3B2B8F0DD3000669E9 /* RequestAPI.swift */; };
 		F70685DE2B8F41F300405F44 /* OnBoardingPersonalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F70685D82B8F41F300405F44 /* OnBoardingPersonalView.swift */; };
-		F70685DF2B8F41F300405F44 /* OnBoardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F70685D92B8F41F300405F44 /* OnBoardingView.swift */; };
 		F70685E12B8F41F300405F44 /* OnboardingNameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F70685DB2B8F41F300405F44 /* OnboardingNameView.swift */; };
 		F70685E22B8F41F300405F44 /* OnBoardingAgeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F70685DC2B8F41F300405F44 /* OnBoardingAgeView.swift */; };
 		F70685E32B8F41F300405F44 /* OnBoardingSizeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F70685DD2B8F41F300405F44 /* OnBoardingSizeView.swift */; };
-		F70685E52B8F421000405F44 /* UserInputViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F70685E42B8F420F00405F44 /* UserInputViewModel.swift */; };
+		F70685E52B8F421000405F44 /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F70685E42B8F420F00405F44 /* UserViewModel.swift */; };
 		F70685E72B8F426200405F44 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = F70685E62B8F426100405F44 /* User.swift */; };
 		F70685EA2B8F66B000405F44 /* ConceptView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F70685E92B8F66B000405F44 /* ConceptView.swift */; };
 		F70685ED2B8F864400405F44 /* LocationPreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F70685EC2B8F864400405F44 /* LocationPreviewView.swift */; };
 		F70685EF2B8F9F6900405F44 /* MapProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F70685EE2B8F9F6900405F44 /* MapProfileView.swift */; };
 		F70685F12B8FA2F400405F44 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F70685F02B8FA2F400405F44 /* DetailView.swift */; };
-		F747496F2B8FB72700880D35 /* OnBoardingName.swift in Sources */ = {isa = PBXBuildFile; fileRef = F747496E2B8FB72700880D35 /* OnBoardingName.swift */; };
-		F74749712B8FB77D00880D35 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F74749702B8FB77D00880D35 /* Extension.swift */; };
 		F74F48C12B8EBE6E00CFC786 /* goormthonApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F74F48C02B8EBE6E00CFC786 /* goormthonApp.swift */; };
 		F74F48C32B8EBE6E00CFC786 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F74F48C22B8EBE6E00CFC786 /* ContentView.swift */; };
 		F74F48C52B8EBE6F00CFC786 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F74F48C42B8EBE6F00CFC786 /* Assets.xcassets */; };
@@ -39,6 +36,9 @@
 		F74F48FC2B8F395000CFC786 /* DatePickView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F74F48FB2B8F395000CFC786 /* DatePickView.swift */; };
 		F7818CED2B8FB7F300437773 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7818CEB2B8FB7F300437773 /* HomeView.swift */; };
 		F7818CF02B8FB82200437773 /* RecommendTileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7818CEF2B8FB82200437773 /* RecommendTileView.swift */; };
+		F7818CF62B8FE0D600437773 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7818CF52B8FE0D600437773 /* LoadingView.swift */; };
+		F7818CF82B8FE15300437773 /* goormthonApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7818CF72B8FE15300437773 /* goormthonApp.swift */; };
+		F7818CFA2B8FE16A00437773 /* Extesion.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7818CF92B8FE16A00437773 /* Extesion.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,18 +47,15 @@
 		CDDC8C392B8EFBD9000669E9 /* LocationInfoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationInfoViewModel.swift; sourceTree = "<group>"; };
 		CDDC8C3B2B8F0DD3000669E9 /* RequestAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestAPI.swift; sourceTree = "<group>"; };
 		F70685D82B8F41F300405F44 /* OnBoardingPersonalView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnBoardingPersonalView.swift; sourceTree = "<group>"; };
-		F70685D92B8F41F300405F44 /* OnBoardingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnBoardingView.swift; sourceTree = "<group>"; };
 		F70685DB2B8F41F300405F44 /* OnboardingNameView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingNameView.swift; sourceTree = "<group>"; };
 		F70685DC2B8F41F300405F44 /* OnBoardingAgeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnBoardingAgeView.swift; sourceTree = "<group>"; };
 		F70685DD2B8F41F300405F44 /* OnBoardingSizeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnBoardingSizeView.swift; sourceTree = "<group>"; };
-		F70685E42B8F420F00405F44 /* UserInputViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserInputViewModel.swift; sourceTree = "<group>"; };
+		F70685E42B8F420F00405F44 /* UserViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
 		F70685E62B8F426100405F44 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		F70685E92B8F66B000405F44 /* ConceptView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConceptView.swift; sourceTree = "<group>"; };
 		F70685EC2B8F864400405F44 /* LocationPreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationPreviewView.swift; sourceTree = "<group>"; };
 		F70685EE2B8F9F6900405F44 /* MapProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapProfileView.swift; sourceTree = "<group>"; };
 		F70685F02B8FA2F400405F44 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
-		F747496E2B8FB72700880D35 /* OnBoardingName.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnBoardingName.swift; sourceTree = "<group>"; };
-		F74749702B8FB77D00880D35 /* Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 		F74F48BD2B8EBE6E00CFC786 /* goormthon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = goormthon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F74F48C02B8EBE6E00CFC786 /* goormthonApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = goormthonApp.swift; sourceTree = "<group>"; };
 		F74F48C22B8EBE6E00CFC786 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -76,6 +73,9 @@
 		F74F48FB2B8F395000CFC786 /* DatePickView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickView.swift; sourceTree = "<group>"; };
 		F7818CEB2B8FB7F300437773 /* HomeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		F7818CEF2B8FB82200437773 /* RecommendTileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendTileView.swift; sourceTree = "<group>"; };
+		F7818CF52B8FE0D600437773 /* LoadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		F7818CF72B8FE15300437773 /* goormthonApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = goormthonApp.swift; sourceTree = "<group>"; };
+		F7818CF92B8FE16A00437773 /* Extesion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extesion.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,7 +93,7 @@
 			isa = PBXGroup;
 			children = (
 				F74F48F42B8EEE5600CFC786 /* MapViewModel.swift */,
-				F70685E42B8F420F00405F44 /* UserInputViewModel.swift */,
+				F70685E42B8F420F00405F44 /* UserViewModel.swift */,
 				CDDC8C302B8EF96D000669E9 /* NetworkManager.swift */,
 				CDDC8C392B8EFBD9000669E9 /* LocationInfoViewModel.swift */,
 				CDDC8C3B2B8F0DD3000669E9 /* RequestAPI.swift */,
@@ -104,12 +104,10 @@
 		F70685E82B8F42A000405F44 /* Onboarding_Pet */ = {
 			isa = PBXGroup;
 			children = (
-				F747496E2B8FB72700880D35 /* OnBoardingName.swift */,
 				F70685DC2B8F41F300405F44 /* OnBoardingAgeView.swift */,
 				F70685DB2B8F41F300405F44 /* OnboardingNameView.swift */,
 				F70685D82B8F41F300405F44 /* OnBoardingPersonalView.swift */,
 				F70685DD2B8F41F300405F44 /* OnBoardingSizeView.swift */,
-				F70685D92B8F41F300405F44 /* OnBoardingView.swift */,
 			);
 			path = Onboarding_Pet;
 			sourceTree = "<group>";
@@ -151,9 +149,10 @@
 				CDDC8C382B8EFBC4000669E9 /* ViewModels */,
 				F74F48E82B8EC33400CFC786 /* Views */,
 				F74F48EE2B8EEC8200CFC786 /* Models */,
-				F74749702B8FB77D00880D35 /* Extension.swift */,
 				F74F48D22B8EBFE800CFC786 /* Info.plist */,
+				F7818CF92B8FE16A00437773 /* Extesion.swift */,
 				F74F48C02B8EBE6E00CFC786 /* goormthonApp.swift */,
+				F7818CF72B8FE15300437773 /* goormthonApp.swift */,
 				F74F48C22B8EBE6E00CFC786 /* ContentView.swift */,
 				F74F48C42B8EBE6F00CFC786 /* Assets.xcassets */,
 				F74F48C62B8EBE6F00CFC786 /* Preview Content */,
@@ -177,6 +176,7 @@
 				F70685E82B8F42A000405F44 /* Onboarding_Pet */,
 				F74F48FA2B8F393C00CFC786 /* Onboarding_Personal */,
 				CDDC8C362B8EFB92000669E9 /* LocationInfoView.swift */,
+				F7818CF52B8FE0D600437773 /* LoadingView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -284,29 +284,29 @@
 				F7818CED2B8FB7F300437773 /* HomeView.swift in Sources */,
 				F74F48F92B8F0D7A00CFC786 /* MarkerView.swift in Sources */,
 				F74F48F22B8EED3D00CFC786 /* LocationData.swift in Sources */,
-				F747496F2B8FB72700880D35 /* OnBoardingName.swift in Sources */,
 				F74F48C32B8EBE6E00CFC786 /* ContentView.swift in Sources */,
 				F70685DE2B8F41F300405F44 /* OnBoardingPersonalView.swift in Sources */,
+				F7818CF62B8FE0D600437773 /* LoadingView.swift in Sources */,
 				CDDC8C372B8EFB92000669E9 /* LocationInfoView.swift in Sources */,
 				CDDC8C3A2B8EFBD9000669E9 /* LocationInfoViewModel.swift in Sources */,
 				F7818CF02B8FB82200437773 /* RecommendTileView.swift in Sources */,
 				F74F48EC2B8EC44400CFC786 /* MapView.swift in Sources */,
 				F70685EA2B8F66B000405F44 /* ConceptView.swift in Sources */,
-				F74749712B8FB77D00880D35 /* Extension.swift in Sources */,
+				F7818CF82B8FE15300437773 /* goormthonApp.swift in Sources */,
 				F70685F12B8FA2F400405F44 /* DetailView.swift in Sources */,
 				CDDC8C312B8EF96D000669E9 /* NetworkManager.swift in Sources */,
 				F70685EF2B8F9F6900405F44 /* MapProfileView.swift in Sources */,
 				F70685E12B8F41F300405F44 /* OnboardingNameView.swift in Sources */,
+				F7818CFA2B8FE16A00437773 /* Extesion.swift in Sources */,
 				F74F48FC2B8F395000CFC786 /* DatePickView.swift in Sources */,
 				F70685E72B8F426200405F44 /* User.swift in Sources */,
 				F74F48F02B8EEC8C00CFC786 /* Location.swift in Sources */,
-				F70685E52B8F421000405F44 /* UserInputViewModel.swift in Sources */,
+				F70685E52B8F421000405F44 /* UserViewModel.swift in Sources */,
 				F70685E22B8F41F300405F44 /* OnBoardingAgeView.swift in Sources */,
 				F70685ED2B8F864400405F44 /* LocationPreviewView.swift in Sources */,
 				F74F48F52B8EEE5600CFC786 /* MapViewModel.swift in Sources */,
 				F74F48F72B8EFC3400CFC786 /* LocationsListView.swift in Sources */,
 				F74F48C12B8EBE6E00CFC786 /* goormthonApp.swift in Sources */,
-				F70685DF2B8F41F300405F44 /* OnBoardingView.swift in Sources */,
 				F70685E32B8F41F300405F44 /* OnBoardingSizeView.swift in Sources */,
 				CDDC8C3C2B8F0DD3000669E9 /* RequestAPI.swift in Sources */,
 			);

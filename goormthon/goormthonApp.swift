@@ -6,10 +6,8 @@ struct goormthonApp: App {
     
     var body: some Scene {
         WindowGroup {
-            
-           ContentView()
-          //  MapView()
-              //  .environmentObject(vm)
+            ContentView()
+                .environmentObject(vm)
         }
     }
 }
