@@ -207,7 +207,7 @@ struct OnBoardingSizeView: View {
                 Spacer()
                 
                 HStack(alignment: .center){
-                    NavigationLink(destination: OnBoardingAgeView(),isActive:$isDestinationActive) {
+                    NavigationLink(destination: OnBoardingAgeView(viewModel:viewModel),isActive:$isDestinationActive) {
                         Button(){
                             
                             if(viewModel.user.petSize  != ""){

@@ -91,7 +91,7 @@ struct OnBoardingPersonalView: View {
                 Spacer()
                 
                 HStack(alignment: .center){
-                    NavigationLink(destination: OnBoardingAgeView(),isActive:$isDestinationActive) {
+                    NavigationLink(destination: OnBoardingAgeView(viewModel: viewModel),isActive:$isDestinationActive) {
                         Button(){
                             
                             if(viewModel.user.petSize  != ""){
@@ -125,5 +125,5 @@ struct OnBoardingPersonalView: View {
 
 
 #Preview {
-    OnBoardingPersonalView(viewModel: UserViewModel(user: User(petName: "", petSize: "", petAge: "", petPersonality: "", tripConcept: "")))
+    OnBoardingPersonalView(viewModel: UserViewModel(user: User(petName: "", petSize: "또리", petAge: "", petPersonality: "", tripConcept: "")))
 }

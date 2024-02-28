@@ -95,5 +95,5 @@ struct OnBoardingView: View {
 }
 
 #Preview {
-    OnBoardingView(viewModel: UserViewModel(user: User(petName: "", petSize: "", petAge: "", petPersonality: "", tripConcept: "")))
+    OnBoardingView(viewModel: UserViewModel(user: User(petName: "", petSize: "또리", petAge: "", petPersonality: "", tripConcept: "")))
 }

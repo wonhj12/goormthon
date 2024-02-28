@@ -13,7 +13,6 @@
 		CDDC8C3C2B8F0DD3000669E9 /* RequestAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDDC8C3B2B8F0DD3000669E9 /* RequestAPI.swift */; };
 		F70685DE2B8F41F300405F44 /* OnBoardingPersonalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F70685D82B8F41F300405F44 /* OnBoardingPersonalView.swift */; };
 		F70685DF2B8F41F300405F44 /* OnBoardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F70685D92B8F41F300405F44 /* OnBoardingView.swift */; };
-		F70685E02B8F41F300405F44 /* OnBoardingName.swift in Sources */ = {isa = PBXBuildFile; fileRef = F70685DA2B8F41F300405F44 /* OnBoardingName.swift */; };
 		F70685E12B8F41F300405F44 /* OnboardingNameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F70685DB2B8F41F300405F44 /* OnboardingNameView.swift */; };
 		F70685E22B8F41F300405F44 /* OnBoardingAgeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F70685DC2B8F41F300405F44 /* OnBoardingAgeView.swift */; };
 		F70685E32B8F41F300405F44 /* OnBoardingSizeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F70685DD2B8F41F300405F44 /* OnBoardingSizeView.swift */; };
@@ -41,7 +40,6 @@
 		CDDC8C3B2B8F0DD3000669E9 /* RequestAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestAPI.swift; sourceTree = "<group>"; };
 		F70685D82B8F41F300405F44 /* OnBoardingPersonalView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnBoardingPersonalView.swift; sourceTree = "<group>"; };
 		F70685D92B8F41F300405F44 /* OnBoardingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnBoardingView.swift; sourceTree = "<group>"; };
-		F70685DA2B8F41F300405F44 /* OnBoardingName.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnBoardingName.swift; sourceTree = "<group>"; };
 		F70685DB2B8F41F300405F44 /* OnboardingNameView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingNameView.swift; sourceTree = "<group>"; };
 		F70685DC2B8F41F300405F44 /* OnBoardingAgeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnBoardingAgeView.swift; sourceTree = "<group>"; };
 		F70685DD2B8F41F300405F44 /* OnBoardingSizeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnBoardingSizeView.swift; sourceTree = "<group>"; };
@@ -91,7 +89,6 @@
 			isa = PBXGroup;
 			children = (
 				F70685DC2B8F41F300405F44 /* OnBoardingAgeView.swift */,
-				F70685DA2B8F41F300405F44 /* OnBoardingName.swift */,
 				F70685DB2B8F41F300405F44 /* OnboardingNameView.swift */,
 				F70685D82B8F41F300405F44 /* OnBoardingPersonalView.swift */,
 				F70685DD2B8F41F300405F44 /* OnBoardingSizeView.swift */,
@@ -263,7 +260,6 @@
 				F74F48C12B8EBE6E00CFC786 /* goormthonApp.swift in Sources */,
 				F70685DF2B8F41F300405F44 /* OnBoardingView.swift in Sources */,
 				F70685E32B8F41F300405F44 /* OnBoardingSizeView.swift in Sources */,
-				F70685E02B8F41F300405F44 /* OnBoardingName.swift in Sources */,
 				CDDC8C3C2B8F0DD3000669E9 /* RequestAPI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
