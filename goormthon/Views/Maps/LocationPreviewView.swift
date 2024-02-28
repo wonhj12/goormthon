@@ -8,8 +8,22 @@ struct LocationPreviewView: View {
         HStack(spacing: 12) {
             // 이미지
             if let imageName = location.imageName {
-                Image(imageName)
-                    .resizable()
+                AsyncImage(url: URL(string: imageName),
+                           scale: 3) { phase in
+                    switch phase {
+                    case .empty:
+                        ZStack {
+                            Color.gray
+                            ProgressView()
+                        }
+                    case .success(let image):
+                        image.resizable()
+                    case .failure(let error):
+                        Text(error.localizedDescription)
+                        // use placeholder for production app
+                    @unknown default:
+                        EmptyView()
+                    }}
                     .scaledToFit()
                     .frame(width: 100, height: 100)
                     .clipShape(.rect(cornerRadius: 8))

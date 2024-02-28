@@ -9,8 +9,22 @@ struct DetailView: View {
                 // Image
                 Group {
                     if let imageName = location.imageName {
-                        Image(imageName)
-                            .resizable()
+                        AsyncImage(url: URL(string: imageName),
+                                   scale: 3) { phase in
+                            switch phase {
+                            case .empty:
+                                ZStack {
+                                    Color.gray
+                                    ProgressView()
+                                }
+                            case .success(let image):
+                                image.resizable()
+                            case .failure(let error):
+                                Text(error.localizedDescription)
+                                // use placeholder for production app
+                            @unknown default:
+                                EmptyView()
+                            }}
                             .scaledToFit()
                             .frame(width: 393, height: 228)
                     } else {
