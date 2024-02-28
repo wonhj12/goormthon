@@ -5,6 +5,7 @@ struct ContentView: View {
         OnBoardingSizeView(viewModel: UserViewModel(user: User(petName: "", petSize: "", petAge: "", petPersonality: "", tripConcept: "")))
         //LocationInfoView()
         // MapView()
+        ConceptView()
     }
 }
 
