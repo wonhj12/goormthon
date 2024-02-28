@@ -19,6 +19,7 @@
 		F74F48F52B8EEE5600CFC786 /* MapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F74F48F42B8EEE5600CFC786 /* MapViewModel.swift */; };
 		F74F48F72B8EFC3400CFC786 /* LocationsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F74F48F62B8EFC3400CFC786 /* LocationsListView.swift */; };
 		F74F48F92B8F0D7A00CFC786 /* MarkerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F74F48F82B8F0D7A00CFC786 /* MarkerView.swift */; };
+		F74F48FC2B8F395000CFC786 /* DatePickView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F74F48FB2B8F395000CFC786 /* DatePickView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		F74F48F42B8EEE5600CFC786 /* MapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewModel.swift; sourceTree = "<group>"; };
 		F74F48F62B8EFC3400CFC786 /* LocationsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsListView.swift; sourceTree = "<group>"; };
 		F74F48F82B8F0D7A00CFC786 /* MarkerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkerView.swift; sourceTree = "<group>"; };
+		F74F48FB2B8F395000CFC786 /* DatePickView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +95,7 @@
 		F74F48E82B8EC33400CFC786 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				F74F48FA2B8F393C00CFC786 /* Onboarding_Personal */,
 				F74F48EB2B8EC44400CFC786 /* MapView.swift */,
 				F74F48F62B8EFC3400CFC786 /* LocationsListView.swift */,
 				F74F48F82B8F0D7A00CFC786 /* MarkerView.swift */,
@@ -115,6 +118,14 @@
 				F74F48F42B8EEE5600CFC786 /* MapViewModel.swift */,
 			);
 			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		F74F48FA2B8F393C00CFC786 /* Onboarding_Personal */ = {
+			isa = PBXGroup;
+			children = (
+				F74F48FB2B8F395000CFC786 /* DatePickView.swift */,
+			);
+			path = Onboarding_Personal;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -193,6 +204,7 @@
 				F74F48F22B8EED3D00CFC786 /* LocationData.swift in Sources */,
 				F74F48C32B8EBE6E00CFC786 /* ContentView.swift in Sources */,
 				F74F48EC2B8EC44400CFC786 /* MapView.swift in Sources */,
+				F74F48FC2B8F395000CFC786 /* DatePickView.swift in Sources */,
 				F74F48F02B8EEC8C00CFC786 /* Location.swift in Sources */,
 				F74F48F52B8EEE5600CFC786 /* MapViewModel.swift in Sources */,
 				F74F48F72B8EFC3400CFC786 /* LocationsListView.swift in Sources */,
