@@ -24,6 +24,8 @@
 		F74F48E62B8EC16F00CFC786 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F74F48E52B8EC16F00CFC786 /* QuartzCore.framework */; };
 		F74F48EA2B8EC34400CFC786 /* KakaoMapWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F74F48E92B8EC34400CFC786 /* KakaoMapWrapper.swift */; };
 		F74F48EC2B8EC44400CFC786 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F74F48EB2B8EC44400CFC786 /* MapView.swift */; };
+		F74F48F02B8EEC8C00CFC786 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = F74F48EF2B8EEC8B00CFC786 /* Location.swift */; };
+		F74F48F22B8EED3D00CFC786 /* LocationData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F74F48F12B8EED3D00CFC786 /* LocationData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +48,8 @@
 		F74F48E52B8EC16F00CFC786 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		F74F48E92B8EC34400CFC786 /* KakaoMapWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KakaoMapWrapper.swift; sourceTree = "<group>"; };
 		F74F48EB2B8EC44400CFC786 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		F74F48EF2B8EEC8B00CFC786 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		F74F48F12B8EED3D00CFC786 /* LocationData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +93,7 @@
 		F74F48BF2B8EBE6E00CFC786 /* goormthon */ = {
 			isa = PBXGroup;
 			children = (
+				F74F48EE2B8EEC8200CFC786 /* Models */,
 				F74F48E82B8EC33400CFC786 /* Views */,
 				F74F48D32B8EC01600CFC786 /* DaumMap.embeddedframework */,
 				F74F48D22B8EBFE800CFC786 /* Info.plist */,
@@ -130,6 +135,15 @@
 				F74F48EB2B8EC44400CFC786 /* MapView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		F74F48EE2B8EEC8200CFC786 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F74F48EF2B8EEC8B00CFC786 /* Location.swift */,
+				F74F48F12B8EED3D00CFC786 /* LocationData.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -205,8 +219,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F74F48F22B8EED3D00CFC786 /* LocationData.swift in Sources */,
 				F74F48C32B8EBE6E00CFC786 /* ContentView.swift in Sources */,
 				F74F48EC2B8EC44400CFC786 /* MapView.swift in Sources */,
+				F74F48F02B8EEC8C00CFC786 /* Location.swift in Sources */,
 				F74F48EA2B8EC34400CFC786 /* KakaoMapWrapper.swift in Sources */,
 				F74F48C12B8EBE6E00CFC786 /* goormthonApp.swift in Sources */,
 			);
