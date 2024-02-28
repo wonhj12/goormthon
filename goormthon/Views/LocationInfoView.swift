@@ -9,24 +9,24 @@ import SwiftUI
 
 struct LocationInfoView: View {
     
-    @StateObject private var dataModel = LocationInfoDataModel()
+    //@StateObject private var dataModel = LocationInfoDataModel()
     @StateObject private var network = RequestAPI.shared
     
-    
-    let baseURLString = "https://picsum.photos/id/12/"
-
-      @Environment(\.displayScale) var scale
-      let size: CGFloat = 200
-      var urlString: String {
-          baseURLString + "\(Int(size * scale))"
-      }
+//    
+//    let baseURLString = "https://picsum.photos/id/12/"
+//
+//      @Environment(\.displayScale) var scale
+//      let size: CGFloat = 200
+//      var urlString: String {
+//          baseURLString + "\(Int(size * scale))"
+//      }
 
     
     var body: some View {
      
         NavigationView{
                     List{
-                        ForEach(self.network.posts, id: \.self) { result in
+                        ForEach($network.posts, id: \.self) { $result in
                             HStack{
                                 URLImage(urlString: result.urlToImage)
                                     .frame(width: 130, height: 70)
@@ -35,7 +35,7 @@ struct LocationInfoView: View {
                                     .bold()
                             }.padding(3)
                         }
-                    }.navigationTitle("뉴스 둘러보기")
+                    }.navigationTitle("INFO")
                 }.onAppear {
                     network.fetchData()
                 }

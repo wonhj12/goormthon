@@ -3,8 +3,8 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-       
-        LocationInfoView()
+        OnBoardingView(viewModel: UserViewModel(user: User(petName: "", petSize: "", petAge: "", petPersonality: "", tripConcept: "")))
+        //LocationInfoView()
         // MapView()
     }
 }

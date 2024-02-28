@@ -3,12 +3,12 @@ import Foundation
 
 // MARK: - Results
 struct Results: Decodable {
-    let infos: [Info]
+    let articles: [Info]
 }
 
 // MARK: - Info
 struct Info: Decodable, Hashable{
-    let name: String
+    let title: String
     let url: String
     let urlToImage: String?
 }
@@ -45,7 +45,7 @@ class RequestAPI: ObservableObject {
             do{
                 let apiResponse = try JSONDecoder().decode(Results.self, from: data)
                 DispatchQueue.main.async {
-                    self.posts = apiResponse.infos
+                    self.posts = apiResponse.articles
                 }
             }catch(let err){
                 print(err.localizedDescription)
