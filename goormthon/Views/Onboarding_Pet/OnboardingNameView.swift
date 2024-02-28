@@ -73,8 +73,6 @@ struct OnboardingNameView: View {
                 {       Text("다음")
                         .font(.headline)
                         .foregroundStyle(viewModel.user.petName != "" ? .white : .gray300)
-                     
-                        
                 }
                 .background{
                     RoundedRectangle(cornerRadius: 10)
