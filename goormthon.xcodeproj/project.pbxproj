@@ -11,9 +11,6 @@
 		CDDC8C372B8EFB92000669E9 /* LocationInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDDC8C362B8EFB92000669E9 /* LocationInfoView.swift */; };
 		CDDC8C3A2B8EFBD9000669E9 /* LocationInfoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDDC8C392B8EFBD9000669E9 /* LocationInfoViewModel.swift */; };
 		CDDC8C3C2B8F0DD3000669E9 /* RequestAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDDC8C3B2B8F0DD3000669E9 /* RequestAPI.swift */; };
-		CDDC8C402B8F207E000669E9 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDDC8C3F2B8F207E000669E9 /* User.swift */; };
-		CDDC8C422B8F2180000669E9 /* UserInputViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDDC8C412B8F2180000669E9 /* UserInputViewModel.swift */; };
-		CDDC8C442B8F2416000669E9 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDDC8C432B8F2416000669E9 /* Extension.swift */; };
 		F70685DE2B8F41F300405F44 /* OnBoardingPersonalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F70685D82B8F41F300405F44 /* OnBoardingPersonalView.swift */; };
 		F70685DF2B8F41F300405F44 /* OnBoardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F70685D92B8F41F300405F44 /* OnBoardingView.swift */; };
 		F70685E02B8F41F300405F44 /* OnBoardingName.swift in Sources */ = {isa = PBXBuildFile; fileRef = F70685DA2B8F41F300405F44 /* OnBoardingName.swift */; };
@@ -42,9 +39,6 @@
 		CDDC8C362B8EFB92000669E9 /* LocationInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationInfoView.swift; sourceTree = "<group>"; };
 		CDDC8C392B8EFBD9000669E9 /* LocationInfoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationInfoViewModel.swift; sourceTree = "<group>"; };
 		CDDC8C3B2B8F0DD3000669E9 /* RequestAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestAPI.swift; sourceTree = "<group>"; };
-		CDDC8C3F2B8F207E000669E9 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
-		CDDC8C412B8F2180000669E9 /* UserInputViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInputViewModel.swift; sourceTree = "<group>"; };
-		CDDC8C432B8F2416000669E9 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 		F70685D82B8F41F300405F44 /* OnBoardingPersonalView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnBoardingPersonalView.swift; sourceTree = "<group>"; };
 		F70685D92B8F41F300405F44 /* OnBoardingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnBoardingView.swift; sourceTree = "<group>"; };
 		F70685DA2B8F41F300405F44 /* OnBoardingName.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnBoardingName.swift; sourceTree = "<group>"; };
@@ -89,7 +83,6 @@
 				CDDC8C302B8EF96D000669E9 /* NetworkManager.swift */,
 				CDDC8C392B8EFBD9000669E9 /* LocationInfoViewModel.swift */,
 				CDDC8C3B2B8F0DD3000669E9 /* RequestAPI.swift */,
-				CDDC8C412B8F2180000669E9 /* UserInputViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -136,7 +129,6 @@
 				F74F48C22B8EBE6E00CFC786 /* ContentView.swift */,
 				F74F48C42B8EBE6F00CFC786 /* Assets.xcassets */,
 				F74F48C62B8EBE6F00CFC786 /* Preview Content */,
-				CDDC8C432B8F2416000669E9 /* Extension.swift */,
 			);
 			path = goormthon;
 			sourceTree = "<group>";
@@ -168,7 +160,6 @@
 				F70685E62B8F426100405F44 /* User.swift */,
 				F74F48EF2B8EEC8B00CFC786 /* Location.swift */,
 				F74F48F12B8EED3D00CFC786 /* LocationData.swift */,
-				CDDC8C3F2B8F207E000669E9 /* User.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -254,13 +245,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				F74F48F92B8F0D7A00CFC786 /* MarkerView.swift in Sources */,
-				CDDC8C442B8F2416000669E9 /* Extension.swift in Sources */,
-				CDDC8C402B8F207E000669E9 /* User.swift in Sources */,
 				F74F48F22B8EED3D00CFC786 /* LocationData.swift in Sources */,
 				F74F48C32B8EBE6E00CFC786 /* ContentView.swift in Sources */,
 				F70685DE2B8F41F300405F44 /* OnBoardingPersonalView.swift in Sources */,
 				CDDC8C372B8EFB92000669E9 /* LocationInfoView.swift in Sources */,
-				CDDC8C422B8F2180000669E9 /* UserInputViewModel.swift in Sources */,
 				CDDC8C3A2B8EFBD9000669E9 /* LocationInfoViewModel.swift in Sources */,
 				F74F48EC2B8EC44400CFC786 /* MapView.swift in Sources */,
 				CDDC8C312B8EF96D000669E9 /* NetworkManager.swift in Sources */,
@@ -411,7 +399,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"goormthon/Preview Content\"";
-				DEVELOPMENT_TEAM = K7698SUQ4K;
+				DEVELOPMENT_TEAM = 785KK9R5M8;
 				ENABLE_PREVIEWS = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -432,7 +420,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.dasoya.goormthon;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hajin.goormthon;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
@@ -454,7 +442,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"goormthon/Preview Content\"";
-				DEVELOPMENT_TEAM = K7698SUQ4K;
+				DEVELOPMENT_TEAM = 785KK9R5M8;
 				ENABLE_PREVIEWS = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -475,7 +463,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.dasoya.goormthon;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hajin.goormthon;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
