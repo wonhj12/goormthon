@@ -6,7 +6,11 @@ struct MapView: View {
     
     var body: some View {
         ZStack {
-            Map(coordinateRegion: $vm.mapRegion)
+            Map(coordinateRegion: $vm.mapRegion,
+                annotationItems: vm.locations,
+                annotationContent: {location in
+                MapMarker(coordinate: location.coordinates, tint: .blue)
+            })
                 .ignoresSafeArea()
             
             VStack {
