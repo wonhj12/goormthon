@@ -40,6 +40,7 @@ extension LocationsListView {
     }
 }
 
-//#Preview {
-//    LocationsListView()
-//}
+#Preview {
+    LocationsListView()
+        .environmentObject(MapViewModel())
+}

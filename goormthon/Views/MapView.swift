@@ -35,6 +35,7 @@ extension MapView {
     }
 }
 
-//#Preview {
-//    MapView()
-//}
+#Preview {
+    MapView()
+        .environmentObject(MapViewModel())
+}
