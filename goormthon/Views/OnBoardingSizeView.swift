@@ -24,45 +24,14 @@ struct OnBoardingSizeView: View {
                     .font(.largeTitle)
                     .bold()
                     .foregroundStyle(.gray500)
-         //           .shadow(radius: 4, x: 0, y: 4)
                     .padding(.leading,16)
                     .padding(.top,34)
                 
                 Spacer()
             }
             
-            HStack{
-                Text("여행에 함께 할 반려가족의 이름을 알려주세요.")
-                    .font(.footnote)
-                    .foregroundStyle(.gray500)
-                    .padding(.leading,16)
-                    .padding(.top,51)
-                    
-                Spacer()
-            }
-            
-            HStack{
-                
-                TextField("반려 가족의 이름", text: $viewModel.user.petName)
-                    .padding(.leading ,16)
-                    //.background(.beigie400)
-                .background
-                {
-                    RoundedRectangle(cornerRadius: 10)
-                        .foregroundColor(.beigie200)
-                        .frame(width: 360,height: 42)
-                        .font(.footnote)
-                     
-                
-                }
-                
-                .padding(.top,8)
-                
-                    
-                Spacer()
-            }
-            
             Spacer()
+            
             HStack(alignment: .center){
                 
                 Button(){
