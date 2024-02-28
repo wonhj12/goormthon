@@ -8,10 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		CDDC8C312B8EF96D000669E9 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDDC8C302B8EF96D000669E9 /* NetworkManager.swift */; };
-		CDDC8C352B8EFB65000669E9 /* InfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDDC8C342B8EFB65000669E9 /* InfoView.swift */; };
 		CDDC8C372B8EFB92000669E9 /* LocationInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDDC8C362B8EFB92000669E9 /* LocationInfoView.swift */; };
 		CDDC8C3A2B8EFBD9000669E9 /* LocationInfoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDDC8C392B8EFBD9000669E9 /* LocationInfoViewModel.swift */; };
 		CDDC8C3C2B8F0DD3000669E9 /* RequestAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDDC8C3B2B8F0DD3000669E9 /* RequestAPI.swift */; };
+		F70685DE2B8F41F300405F44 /* OnBoardingPersonalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F70685D82B8F41F300405F44 /* OnBoardingPersonalView.swift */; };
+		F70685DF2B8F41F300405F44 /* OnBoardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F70685D92B8F41F300405F44 /* OnBoardingView.swift */; };
+		F70685E02B8F41F300405F44 /* OnBoardingName.swift in Sources */ = {isa = PBXBuildFile; fileRef = F70685DA2B8F41F300405F44 /* OnBoardingName.swift */; };
+		F70685E12B8F41F300405F44 /* OnboardingNameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F70685DB2B8F41F300405F44 /* OnboardingNameView.swift */; };
+		F70685E22B8F41F300405F44 /* OnBoardingAgeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F70685DC2B8F41F300405F44 /* OnBoardingAgeView.swift */; };
+		F70685E32B8F41F300405F44 /* OnBoardingSizeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F70685DD2B8F41F300405F44 /* OnBoardingSizeView.swift */; };
+		F70685E52B8F421000405F44 /* UserInputViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F70685E42B8F420F00405F44 /* UserInputViewModel.swift */; };
+		F70685E72B8F426200405F44 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = F70685E62B8F426100405F44 /* User.swift */; };
 		F74F48C12B8EBE6E00CFC786 /* goormthonApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F74F48C02B8EBE6E00CFC786 /* goormthonApp.swift */; };
 		F74F48C32B8EBE6E00CFC786 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F74F48C22B8EBE6E00CFC786 /* ContentView.swift */; };
 		F74F48C52B8EBE6F00CFC786 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F74F48C42B8EBE6F00CFC786 /* Assets.xcassets */; };
@@ -23,14 +30,23 @@
 		F74F48F22B8EED3D00CFC786 /* LocationData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F74F48F12B8EED3D00CFC786 /* LocationData.swift */; };
 		F74F48F52B8EEE5600CFC786 /* MapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F74F48F42B8EEE5600CFC786 /* MapViewModel.swift */; };
 		F74F48F72B8EFC3400CFC786 /* LocationsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F74F48F62B8EFC3400CFC786 /* LocationsListView.swift */; };
+		F74F48F92B8F0D7A00CFC786 /* MarkerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F74F48F82B8F0D7A00CFC786 /* MarkerView.swift */; };
+		F74F48FC2B8F395000CFC786 /* DatePickView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F74F48FB2B8F395000CFC786 /* DatePickView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		CDDC8C302B8EF96D000669E9 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
-		CDDC8C342B8EFB65000669E9 /* InfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoView.swift; sourceTree = "<group>"; };
 		CDDC8C362B8EFB92000669E9 /* LocationInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationInfoView.swift; sourceTree = "<group>"; };
 		CDDC8C392B8EFBD9000669E9 /* LocationInfoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationInfoViewModel.swift; sourceTree = "<group>"; };
 		CDDC8C3B2B8F0DD3000669E9 /* RequestAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestAPI.swift; sourceTree = "<group>"; };
+		F70685D82B8F41F300405F44 /* OnBoardingPersonalView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnBoardingPersonalView.swift; sourceTree = "<group>"; };
+		F70685D92B8F41F300405F44 /* OnBoardingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnBoardingView.swift; sourceTree = "<group>"; };
+		F70685DA2B8F41F300405F44 /* OnBoardingName.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnBoardingName.swift; sourceTree = "<group>"; };
+		F70685DB2B8F41F300405F44 /* OnboardingNameView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingNameView.swift; sourceTree = "<group>"; };
+		F70685DC2B8F41F300405F44 /* OnBoardingAgeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnBoardingAgeView.swift; sourceTree = "<group>"; };
+		F70685DD2B8F41F300405F44 /* OnBoardingSizeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnBoardingSizeView.swift; sourceTree = "<group>"; };
+		F70685E42B8F420F00405F44 /* UserInputViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserInputViewModel.swift; sourceTree = "<group>"; };
+		F70685E62B8F426100405F44 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		F74F48BD2B8EBE6E00CFC786 /* goormthon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = goormthon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F74F48C02B8EBE6E00CFC786 /* goormthonApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = goormthonApp.swift; sourceTree = "<group>"; };
 		F74F48C22B8EBE6E00CFC786 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -44,6 +60,8 @@
 		F74F48F12B8EED3D00CFC786 /* LocationData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationData.swift; sourceTree = "<group>"; };
 		F74F48F42B8EEE5600CFC786 /* MapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewModel.swift; sourceTree = "<group>"; };
 		F74F48F62B8EFC3400CFC786 /* LocationsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsListView.swift; sourceTree = "<group>"; };
+		F74F48F82B8F0D7A00CFC786 /* MarkerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkerView.swift; sourceTree = "<group>"; };
+		F74F48FB2B8F395000CFC786 /* DatePickView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,11 +78,26 @@
 		CDDC8C382B8EFBC4000669E9 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				F74F48F42B8EEE5600CFC786 /* MapViewModel.swift */,
+				F70685E42B8F420F00405F44 /* UserInputViewModel.swift */,
 				CDDC8C302B8EF96D000669E9 /* NetworkManager.swift */,
 				CDDC8C392B8EFBD9000669E9 /* LocationInfoViewModel.swift */,
 				CDDC8C3B2B8F0DD3000669E9 /* RequestAPI.swift */,
 			);
 			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		F70685E82B8F42A000405F44 /* Onboarding_Pet */ = {
+			isa = PBXGroup;
+			children = (
+				F70685DC2B8F41F300405F44 /* OnBoardingAgeView.swift */,
+				F70685DA2B8F41F300405F44 /* OnBoardingName.swift */,
+				F70685DB2B8F41F300405F44 /* OnboardingNameView.swift */,
+				F70685D82B8F41F300405F44 /* OnBoardingPersonalView.swift */,
+				F70685DD2B8F41F300405F44 /* OnBoardingSizeView.swift */,
+				F70685D92B8F41F300405F44 /* OnBoardingView.swift */,
+			);
+			path = Onboarding_Pet;
 			sourceTree = "<group>";
 		};
 		F74F48B42B8EBE6E00CFC786 = {
@@ -90,7 +123,6 @@
 			children = (
 				CDDC8C382B8EFBC4000669E9 /* ViewModels */,
 				F74F48E82B8EC33400CFC786 /* Views */,
-				F74F48F32B8EEE2A00CFC786 /* ViewModels */,
 				F74F48EE2B8EEC8200CFC786 /* Models */,
 				F74F48D22B8EBFE800CFC786 /* Info.plist */,
 				F74F48C02B8EBE6E00CFC786 /* goormthonApp.swift */,
@@ -112,10 +144,12 @@
 		F74F48E82B8EC33400CFC786 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				F70685E82B8F42A000405F44 /* Onboarding_Pet */,
+				F74F48FA2B8F393C00CFC786 /* Onboarding_Personal */,
 				F74F48EB2B8EC44400CFC786 /* MapView.swift */,
-				CDDC8C342B8EFB65000669E9 /* InfoView.swift */,
 				CDDC8C362B8EFB92000669E9 /* LocationInfoView.swift */,
 				F74F48F62B8EFC3400CFC786 /* LocationsListView.swift */,
+				F74F48F82B8F0D7A00CFC786 /* MarkerView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -123,18 +157,19 @@
 		F74F48EE2B8EEC8200CFC786 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				F70685E62B8F426100405F44 /* User.swift */,
 				F74F48EF2B8EEC8B00CFC786 /* Location.swift */,
 				F74F48F12B8EED3D00CFC786 /* LocationData.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
 		};
-		F74F48F32B8EEE2A00CFC786 /* ViewModels */ = {
+		F74F48FA2B8F393C00CFC786 /* Onboarding_Personal */ = {
 			isa = PBXGroup;
 			children = (
-				F74F48F42B8EEE5600CFC786 /* MapViewModel.swift */,
+				F74F48FB2B8F395000CFC786 /* DatePickView.swift */,
 			);
-			path = ViewModels;
+			path = Onboarding_Personal;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -209,19 +244,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F74F48F92B8F0D7A00CFC786 /* MarkerView.swift in Sources */,
 				F74F48F22B8EED3D00CFC786 /* LocationData.swift in Sources */,
 				F74F48C32B8EBE6E00CFC786 /* ContentView.swift in Sources */,
+				F70685DE2B8F41F300405F44 /* OnBoardingPersonalView.swift in Sources */,
 				CDDC8C372B8EFB92000669E9 /* LocationInfoView.swift in Sources */,
 				CDDC8C3A2B8EFBD9000669E9 /* LocationInfoViewModel.swift in Sources */,
 				F74F48EC2B8EC44400CFC786 /* MapView.swift in Sources */,
 				CDDC8C312B8EF96D000669E9 /* NetworkManager.swift in Sources */,
-				F74F48EA2B8EC34400CFC786 /* KakaoMapWrapper.swift in Sources */,
+				F70685E12B8F41F300405F44 /* OnboardingNameView.swift in Sources */,
+				F74F48FC2B8F395000CFC786 /* DatePickView.swift in Sources */,
+				F70685E72B8F426200405F44 /* User.swift in Sources */,
 				F74F48F02B8EEC8C00CFC786 /* Location.swift in Sources */,
+				F70685E52B8F421000405F44 /* UserInputViewModel.swift in Sources */,
+				F70685E22B8F41F300405F44 /* OnBoardingAgeView.swift in Sources */,
 				F74F48F52B8EEE5600CFC786 /* MapViewModel.swift in Sources */,
 				F74F48F72B8EFC3400CFC786 /* LocationsListView.swift in Sources */,
 				F74F48C12B8EBE6E00CFC786 /* goormthonApp.swift in Sources */,
+				F70685DF2B8F41F300405F44 /* OnBoardingView.swift in Sources */,
+				F70685E32B8F41F300405F44 /* OnBoardingSizeView.swift in Sources */,
+				F70685E02B8F41F300405F44 /* OnBoardingName.swift in Sources */,
 				CDDC8C3C2B8F0DD3000669E9 /* RequestAPI.swift in Sources */,
-				CDDC8C352B8EFB65000669E9 /* InfoView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -368,12 +411,10 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -386,7 +427,6 @@
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = /Users/dasoya/Documents/GitHub/goormthon/goormthon/DaumMap.embeddedframework/KakaoBridgeHeader.h;
 				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -414,12 +454,10 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -432,7 +470,6 @@
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = /Users/dasoya/Documents/GitHub/goormthon/goormthon/DaumMap.embeddedframework/KakaoBridgeHeader.h;
 				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;

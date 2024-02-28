@@ -9,10 +9,7 @@ class MapViewModel: ObservableObject {
             updateMapRegion(location: location)
         }
     } // Current selected location
-    @Published var mapRegion: MKCoordinateRegion = MKCoordinateRegion() // 지도 표시 위치 region
-    
-    
-    let mapSpan = MKCoordinateSpan(latitudeDelta: 0.1, longitudeDelta: 0.1)
+    @Published var cameraPosition: MapCameraPosition = .region(MKCoordinateRegion())    // 지도 표시 위치 region
     
     init() {
         let locations = LocationData.locations
@@ -22,9 +19,10 @@ class MapViewModel: ObservableObject {
     }
     
     private func updateMapRegion(location: Location) {
-        mapRegion = MKCoordinateRegion(
+        cameraPosition = .region(MKCoordinateRegion(
             center: location.coordinates,
-            span: mapSpan)
+            latitudinalMeters: 1000,
+            longitudinalMeters: 1000))
     }
     
     func showNextLocation(location: Location) {
