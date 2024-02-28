@@ -39,9 +39,20 @@ struct DetailView: View {
                     
                     
                     // 해시태그
-                    RoundedRectangle(cornerRadius: 30)
-                        .foregroundStyle(.yellow300)
-                        .frame(width: 80, height: 32)
+                    HStack(spacing: 6) {
+                        ForEach(location.hashTags.extractKeywords(), id: \.self) { hashTag in
+                            Text(hashTag)
+                                .foregroundStyle(.gray200)
+                                .font(.footnote)
+                                .frame(height: 34)
+                                .padding(.horizontal)
+                                .background {
+                                    RoundedRectangle(cornerRadius: 30)
+                                        .foregroundStyle(.yellow300)
+                                }
+                        }
+                    }
+                    .frame(maxWidth: .infinity, alignment: .leading)
                     
                     // 주소
                     HStack {

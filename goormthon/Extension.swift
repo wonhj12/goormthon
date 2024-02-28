@@ -1,10 +1,3 @@
-//
-//  Extesion.swift
-//  goormthon
-//
-//  Created by dasoya on 2/29/24.
-//
-
 import Foundation
 
 extension String {
@@ -20,7 +13,11 @@ extension String {
         for match in matches {
             if let range = Range(match.range, in: self) {
                 let keyword = String(self[range])
-                keywords.append(keyword)
+                keywords.append("#\(keyword)")
+                
+                if (keyword.count == 3) {
+                    break
+                }
             }
         }
         

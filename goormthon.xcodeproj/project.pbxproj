@@ -22,7 +22,6 @@
 		F70685ED2B8F864400405F44 /* LocationPreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F70685EC2B8F864400405F44 /* LocationPreviewView.swift */; };
 		F70685EF2B8F9F6900405F44 /* MapProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F70685EE2B8F9F6900405F44 /* MapProfileView.swift */; };
 		F70685F12B8FA2F400405F44 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F70685F02B8FA2F400405F44 /* DetailView.swift */; };
-		F747496D2B8FB70B00880D35 /* Home View in Resources */ = {isa = PBXBuildFile; fileRef = F747496C2B8FB70B00880D35 /* Home View */; };
 		F747496F2B8FB72700880D35 /* OnBoardingName.swift in Sources */ = {isa = PBXBuildFile; fileRef = F747496E2B8FB72700880D35 /* OnBoardingName.swift */; };
 		F74749712B8FB77D00880D35 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F74749702B8FB77D00880D35 /* Extension.swift */; };
 		F74F48C12B8EBE6E00CFC786 /* goormthonApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F74F48C02B8EBE6E00CFC786 /* goormthonApp.swift */; };
@@ -38,6 +37,8 @@
 		F74F48F72B8EFC3400CFC786 /* LocationsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F74F48F62B8EFC3400CFC786 /* LocationsListView.swift */; };
 		F74F48F92B8F0D7A00CFC786 /* MarkerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F74F48F82B8F0D7A00CFC786 /* MarkerView.swift */; };
 		F74F48FC2B8F395000CFC786 /* DatePickView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F74F48FB2B8F395000CFC786 /* DatePickView.swift */; };
+		F7818CED2B8FB7F300437773 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7818CEB2B8FB7F300437773 /* HomeView.swift */; };
+		F7818CF02B8FB82200437773 /* RecommendTileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7818CEF2B8FB82200437773 /* RecommendTileView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,7 +57,6 @@
 		F70685EC2B8F864400405F44 /* LocationPreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationPreviewView.swift; sourceTree = "<group>"; };
 		F70685EE2B8F9F6900405F44 /* MapProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapProfileView.swift; sourceTree = "<group>"; };
 		F70685F02B8FA2F400405F44 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
-		F747496C2B8FB70B00880D35 /* Home View */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "Home View"; sourceTree = "<group>"; };
 		F747496E2B8FB72700880D35 /* OnBoardingName.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnBoardingName.swift; sourceTree = "<group>"; };
 		F74749702B8FB77D00880D35 /* Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 		F74F48BD2B8EBE6E00CFC786 /* goormthon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = goormthon.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -74,6 +74,8 @@
 		F74F48F62B8EFC3400CFC786 /* LocationsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsListView.swift; sourceTree = "<group>"; };
 		F74F48F82B8F0D7A00CFC786 /* MarkerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkerView.swift; sourceTree = "<group>"; };
 		F74F48FB2B8F395000CFC786 /* DatePickView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickView.swift; sourceTree = "<group>"; };
+		F7818CEB2B8FB7F300437773 /* HomeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		F7818CEF2B8FB82200437773 /* RecommendTileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendTileView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -170,7 +172,7 @@
 		F74F48E82B8EC33400CFC786 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				F747496C2B8FB70B00880D35 /* Home View */,
+				F7818CEA2B8FB7E800437773 /* Home */,
 				F70685EB2B8F79FD00405F44 /* Maps */,
 				F70685E82B8F42A000405F44 /* Onboarding_Pet */,
 				F74F48FA2B8F393C00CFC786 /* Onboarding_Personal */,
@@ -196,6 +198,15 @@
 				F70685E92B8F66B000405F44 /* ConceptView.swift */,
 			);
 			path = Onboarding_Personal;
+			sourceTree = "<group>";
+		};
+		F7818CEA2B8FB7E800437773 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				F7818CEB2B8FB7F300437773 /* HomeView.swift */,
+				F7818CEF2B8FB82200437773 /* RecommendTileView.swift */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,7 +269,6 @@
 			files = (
 				F74F48C82B8EBE6F00CFC786 /* Preview Assets.xcassets in Resources */,
 				F74F48CF2B8EBE8700CFC786 /* .gitignore in Resources */,
-				F747496D2B8FB70B00880D35 /* Home View in Resources */,
 				F74F48C52B8EBE6F00CFC786 /* Assets.xcassets in Resources */,
 				F74F48D12B8EBEA800CFC786 /* .gitattributes in Resources */,
 			);
@@ -271,6 +281,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F7818CED2B8FB7F300437773 /* HomeView.swift in Sources */,
 				F74F48F92B8F0D7A00CFC786 /* MarkerView.swift in Sources */,
 				F74F48F22B8EED3D00CFC786 /* LocationData.swift in Sources */,
 				F747496F2B8FB72700880D35 /* OnBoardingName.swift in Sources */,
@@ -278,6 +289,7 @@
 				F70685DE2B8F41F300405F44 /* OnBoardingPersonalView.swift in Sources */,
 				CDDC8C372B8EFB92000669E9 /* LocationInfoView.swift in Sources */,
 				CDDC8C3A2B8EFBD9000669E9 /* LocationInfoViewModel.swift in Sources */,
+				F7818CF02B8FB82200437773 /* RecommendTileView.swift in Sources */,
 				F74F48EC2B8EC44400CFC786 /* MapView.swift in Sources */,
 				F70685EA2B8F66B000405F44 /* ConceptView.swift in Sources */,
 				F74749712B8FB77D00880D35 /* Extension.swift in Sources */,
