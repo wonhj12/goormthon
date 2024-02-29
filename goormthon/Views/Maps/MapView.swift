@@ -26,6 +26,7 @@ struct MapView: View {
                     
                     Button {
                         reload = true
+                        vm.changeLocations()
                     } label: {
                         ZStack {
                             Circle()
@@ -84,7 +85,7 @@ extension MapView {
                             }))
                     
                         .sheet(isPresented: $vm.showDetail) {
-                            DetailView(location: location)
+                            DetailView(location: location, viewModel: viewModel)
                         }
                 }
             }
