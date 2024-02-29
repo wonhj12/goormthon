@@ -47,8 +47,19 @@ class LocationData {
                  dogSize: "소형견, 중형견, 대형견",
                  hashTags: "#미술관 #전시",
                  description: "목줄 2m 이내, 배변 봉투 지참, 관광지 내 카페 동반 입장 가능", imageName:
+                    "https://lh3.googleusercontent.com/p/AF1QipMvJkLRS88a9BPt0sssgjDD11zG6lAwutBWWvcf=s1360-w1360-h1020")
+    ]
+    
+    static let location2 = [
+        Location(name: "돌하르방미술관",
+                 locationType: "관광지",
+                 address: "제주시 조천읍 북촌서1길 70",
+                 coordinates: CLLocationCoordinate2D(latitude: 33.442161, longitude: 126.381630),
+                 openHours: "09:00~18:00",
+                 dogSize: "소형견, 중형견, 대형견",
+                 hashTags: "#미술관 #전시",
+                 description: "목줄 2m 이내, 배변 봉투 지참, 관광지 내 카페 동반 입장 가능", imageName:
                     "https://lh3.googleusercontent.com/p/AF1QipMvJkLRS88a9BPt0sssgjDD11zG6lAwutBWWvcf=s1360-w1360-h1020"),
-        
         Location(name: "메이즈랜드",
                  locationType: "관광지",
                  address: "제주시 구좌읍 비자림로 2134-47",
@@ -76,11 +87,7 @@ class LocationData {
                  hashTags: "#공원 #소형견",
                  description: "7kg 미만, 2m 이내, 배변 봉투 지참, 카페내부 입장불가, 관람객이 많은 곳에서는 꼭 안고 다녀야 함",
                  imageName: "https://api.cdn.visitjeju.net/photomng/imgpath/202308/29/d8e383ae-c13c-4432-8f1b-6f3ed3e45ef7.jpg")
-        
-        
-    ]
-    
-    
+    ] 
 }
 
 

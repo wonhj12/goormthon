@@ -12,6 +12,8 @@ class MapViewModel: ObservableObject {
     @Published var cameraPosition: MapCameraPosition = .region(MKCoordinateRegion())    // 지도 표시 위치 region
     @Published var showDetail: Bool = false
     
+    @Published var reload: Bool = false
+    
     init() {
         let locations = LocationData.locations
         self.locations = locations
@@ -73,7 +75,7 @@ class MapViewModel: ObservableObject {
         showNextLocation(location: nextLocation)
     }
     
-    func getDirection() {
-        
+    func changeLocations() {
+        locations = LocationData.location2
     }
 }
