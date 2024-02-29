@@ -25,7 +25,7 @@ struct DetailView: View {
                             @unknown default:
                                 EmptyView()
                             }}
-                            .scaledToFit()
+                            //.scaledToFit()
                             .frame(width: 393, height: 228)
                     } else {
                         Rectangle()
