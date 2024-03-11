@@ -1,12 +1,14 @@
 import SwiftUI
 import MapKit
+import TipKit
 
 struct MapView: View {
     @EnvironmentObject private var vm: MapViewModel
-    
     @State private var reload: Bool = false
-    
     @ObservedObject var viewModel : UserViewModel
+    
+    private let resetTip = ResetTip()
+    private let newTip = NewTip()
     
     init(viewModel: UserViewModel) {
         self.viewModel = viewModel
@@ -21,29 +23,70 @@ struct MapView: View {
                 profile // 상단 profile info
                     .padding(.bottom, 8)
                 
+                // 재설정 버튼
+                Button {
+                    reload = true
+                    vm.changeLocations()
+                } label: {
+                    ZStack {
+                        Circle()
+                            .frame(width: 44, height: 44)
+                            .foregroundStyle(.white)
+                        
+                        Image(systemName: "arrow.clockwise")
+                            .foregroundStyle(.gray200)
+                            .bold()
+                        
+                    }
+                    .padding(.horizontal)
+                    .popoverTip(resetTip)
+                }
+                .frame(maxWidth: .infinity, alignment: .trailing)
+                .shadow(color: Color.black.opacity(0.15), radius: 8, x: 0, y: 4)
+                
+                Spacer()
+                
+                // 전체 재설정 버튼
+                Button {
+                } label: {
+                    ZStack {
+                        Circle()
+                            .frame(width: 44, height: 44)
+                            .foregroundStyle(.white)
+                        
+                        Image(systemName: "lightbulb.min.fill")
+                            .foregroundStyle(.gray200)
+                            .bold()
+                    }
+                    .padding(.horizontal)
+                    .popoverTip(newTip)
+                }
+                .frame(maxWidth: .infinity, alignment: .leading)
+                .shadow(color: Color.black.opacity(0.15), radius: 8, x: 0, y: 4)
+                
+                // 현재 위치 버튼
                 HStack {
-                    Spacer()
-                    
                     Button {
-                        reload = true
-                        vm.changeLocations()
                     } label: {
                         ZStack {
                             Circle()
                                 .frame(width: 44, height: 44)
                                 .foregroundStyle(.white)
                             
-                            Image(systemName: "arrow.clockwise")
+                            Image(systemName: "location.fill")
                                 .foregroundStyle(.gray200)
                                 .bold()
                         }
                         .padding(.horizontal)
                     }
+                    .shadow(color: Color.black.opacity(0.15), radius: 8, x: 0, y: 4)
+                    
+                    Spacer()
                 }
-                
-                Spacer()
+                .padding(.top, 12)
                 
                 locationPreview // 하단 preview
+                    .padding(.top, 12)
             }
         }
         .navigationDestination(isPresented: $reload) {
@@ -70,7 +113,7 @@ extension MapView {
                 
                 if (vm.location == location) {
                     LocationPreviewView(index: index + 1, location: location)
-                        .shadow(radius: 10)
+                        .shadow(color: Color.black.opacity(0.15), radius: 8, x: 0, y: 4)
                         .padding(.bottom)
                         .transition(.asymmetric(insertion: .move(edge: .trailing), removal: .move(edge: .leading)))
                         .onTapGesture {
@@ -100,7 +143,7 @@ extension MapView {
                 Annotation("", coordinate: location.coordinates) {
                     MarkerView(num: index + 1)
                         .scaleEffect(vm.location == location ? 1 : 0.7)
-                        .shadow(radius: 10)
+                        .shadow(color: Color.black.opacity(0.15), radius: 8, x: 0, y: 4)
                         .onTapGesture {
                             vm.showNextLocation(location: location) // 선택한 장소로 이동
                         }
@@ -117,4 +160,11 @@ extension MapView {
 #Preview {
     MapView(viewModel: UserViewModel(user: User(petName: "또리", petSize: "", petAge: "", petPersonality: "", tripDate: "", tripConcept: "", tags: "#대형견#활발한#뛰는걸 좋아하는")))
         .environmentObject(MapViewModel())
+        .task {
+            try? Tips.resetDatastore()
+            try? Tips.configure([
+                .displayFrequency(.immediate)
+                //                .datastoreLocation(.applicationDefault)
+            ])
+        }
 }

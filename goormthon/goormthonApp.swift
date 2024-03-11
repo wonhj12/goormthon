@@ -1,4 +1,5 @@
 import SwiftUI
+import TipKit
 
 @main
 struct goormthonApp: App {
@@ -8,6 +9,12 @@ struct goormthonApp: App {
         WindowGroup {
             ContentView()
                 .environmentObject(vm)
+                .task {
+                    try? Tips.configure([
+                        .displayFrequency(.immediate)
+//                        .datastoreLocation(.applicationDefault)
+                    ])
+                }
         }
     }
 }

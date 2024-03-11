@@ -12,6 +12,7 @@ struct MapProfileView: View {
             Text("활발하고 뛰어노는걸 좋아하는\n\(viewModel.user.petName)를 위한 여행 코스🍊")
                 .foregroundStyle(.gray500)
                 .font(.callout)
+                .fontWeight(.semibold)
                 .frame(maxWidth: .infinity, alignment: .leading)
                 .padding(.horizontal)
         }
@@ -19,6 +20,7 @@ struct MapProfileView: View {
         .background(.white)
         .opacity(0.8)
         .clipShape(.rect(cornerRadius: 10))
+        .shadow(color: Color.black.opacity(0.15), radius: 8, x: 0, y: 4)
     }
 }
 

@@ -39,6 +39,7 @@
 		F7818CFA2B8FE16A00437773 /* Extesion.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7818CF92B8FE16A00437773 /* Extesion.swift */; };
 		F7B1BC762B8FF057006399E5 /* locations.json in Resources */ = {isa = PBXBuildFile; fileRef = F7B1BC752B8FF057006399E5 /* locations.json */; };
 		F7BBE8D72B9F365B00BC884A /* goormthonApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7BBE8D62B9F365B00BC884A /* goormthonApp.swift */; };
+		F7BBE8D92B9F435900BC884A /* Tips.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7BBE8D82B9F435900BC884A /* Tips.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -76,6 +77,7 @@
 		F7818CF92B8FE16A00437773 /* Extesion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extesion.swift; sourceTree = "<group>"; };
 		F7B1BC752B8FF057006399E5 /* locations.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = locations.json; sourceTree = "<group>"; };
 		F7BBE8D62B9F365B00BC884A /* goormthonApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = goormthonApp.swift; sourceTree = "<group>"; };
+		F7BBE8D82B9F435900BC884A /* Tips.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tips.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +123,7 @@
 				F70685F02B8FA2F400405F44 /* DetailView.swift */,
 				F74F48F82B8F0D7A00CFC786 /* MarkerView.swift */,
 				F70685EE2B8F9F6900405F44 /* MapProfileView.swift */,
+				F7BBE8D82B9F435900BC884A /* Tips.swift */,
 			);
 			path = Maps;
 			sourceTree = "<group>";
@@ -307,6 +310,7 @@
 				F70685ED2B8F864400405F44 /* LocationPreviewView.swift in Sources */,
 				F74F48F52B8EEE5600CFC786 /* MapViewModel.swift in Sources */,
 				F74F48F72B8EFC3400CFC786 /* LocationsListView.swift in Sources */,
+				F7BBE8D92B9F435900BC884A /* Tips.swift in Sources */,
 				F70685E32B8F41F300405F44 /* OnBoardingSizeView.swift in Sources */,
 				CDDC8C3C2B8F0DD3000669E9 /* RequestAPI.swift in Sources */,
 			);
@@ -458,7 +462,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -473,7 +477,7 @@
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -501,7 +505,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -516,7 +520,7 @@
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};

@@ -8,8 +8,7 @@ struct LocationPreviewView: View {
         HStack(spacing: 12) {
             // 이미지
             if let imageName = location.imageName {
-                AsyncImage(url: URL(string: imageName),
-                           scale: 3) { phase in
+                AsyncImage(url: URL(string: imageName), scale: 3) { phase in
                     switch phase {
                     case .empty:
                         ZStack {
@@ -23,11 +22,13 @@ struct LocationPreviewView: View {
                         // use placeholder for production app
                     @unknown default:
                         EmptyView()
-                    }}
-                    .scaledToFit()
-                    .frame(width: 100, height: 100)
-                    .clipShape(.rect(cornerRadius: 8))
-                    .padding(.horizontal)
+                    }
+                }
+                .scaledToFill()
+                .frame(width: 100, height: 100)
+                .clipped()
+                .clipShape(.rect(cornerRadius: 8))
+                .padding(.horizontal)
             } else {
                 RoundedRectangle(cornerRadius: 8)
                     .frame(width: 100, height: 100)
@@ -74,7 +75,7 @@ struct LocationPreviewView: View {
         .frame(width: 360, height: 126)
         .background(Color.white)
         .clipShape(.rect(cornerRadius: 10))
-
+        
     }
 }
 
