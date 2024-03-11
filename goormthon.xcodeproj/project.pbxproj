@@ -21,7 +21,6 @@
 		F70685ED2B8F864400405F44 /* LocationPreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F70685EC2B8F864400405F44 /* LocationPreviewView.swift */; };
 		F70685EF2B8F9F6900405F44 /* MapProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F70685EE2B8F9F6900405F44 /* MapProfileView.swift */; };
 		F70685F12B8FA2F400405F44 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F70685F02B8FA2F400405F44 /* DetailView.swift */; };
-		F74F48C12B8EBE6E00CFC786 /* goormthonApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F74F48C02B8EBE6E00CFC786 /* goormthonApp.swift */; };
 		F74F48C32B8EBE6E00CFC786 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F74F48C22B8EBE6E00CFC786 /* ContentView.swift */; };
 		F74F48C52B8EBE6F00CFC786 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F74F48C42B8EBE6F00CFC786 /* Assets.xcassets */; };
 		F74F48C82B8EBE6F00CFC786 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F74F48C72B8EBE6F00CFC786 /* Preview Assets.xcassets */; };
@@ -37,9 +36,9 @@
 		F7818CED2B8FB7F300437773 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7818CEB2B8FB7F300437773 /* HomeView.swift */; };
 		F7818CF02B8FB82200437773 /* RecommendTileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7818CEF2B8FB82200437773 /* RecommendTileView.swift */; };
 		F7818CF62B8FE0D600437773 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7818CF52B8FE0D600437773 /* LoadingView.swift */; };
-		F7818CF82B8FE15300437773 /* goormthonApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7818CF72B8FE15300437773 /* goormthonApp.swift */; };
 		F7818CFA2B8FE16A00437773 /* Extesion.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7818CF92B8FE16A00437773 /* Extesion.swift */; };
 		F7B1BC762B8FF057006399E5 /* locations.json in Resources */ = {isa = PBXBuildFile; fileRef = F7B1BC752B8FF057006399E5 /* locations.json */; };
+		F7BBE8D72B9F365B00BC884A /* goormthonApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7BBE8D62B9F365B00BC884A /* goormthonApp.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,7 +57,6 @@
 		F70685EE2B8F9F6900405F44 /* MapProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapProfileView.swift; sourceTree = "<group>"; };
 		F70685F02B8FA2F400405F44 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		F74F48BD2B8EBE6E00CFC786 /* goormthon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = goormthon.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		F74F48C02B8EBE6E00CFC786 /* goormthonApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = goormthonApp.swift; sourceTree = "<group>"; };
 		F74F48C22B8EBE6E00CFC786 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		F74F48C42B8EBE6F00CFC786 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F74F48C72B8EBE6F00CFC786 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -75,9 +73,9 @@
 		F7818CEB2B8FB7F300437773 /* HomeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		F7818CEF2B8FB82200437773 /* RecommendTileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendTileView.swift; sourceTree = "<group>"; };
 		F7818CF52B8FE0D600437773 /* LoadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
-		F7818CF72B8FE15300437773 /* goormthonApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = goormthonApp.swift; sourceTree = "<group>"; };
 		F7818CF92B8FE16A00437773 /* Extesion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extesion.swift; sourceTree = "<group>"; };
 		F7B1BC752B8FF057006399E5 /* locations.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = locations.json; sourceTree = "<group>"; };
+		F7BBE8D62B9F365B00BC884A /* goormthonApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = goormthonApp.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,8 +151,7 @@
 				F74F48EE2B8EEC8200CFC786 /* Models */,
 				F74F48D22B8EBFE800CFC786 /* Info.plist */,
 				F7818CF92B8FE16A00437773 /* Extesion.swift */,
-				F74F48C02B8EBE6E00CFC786 /* goormthonApp.swift */,
-				F7818CF72B8FE15300437773 /* goormthonApp.swift */,
+				F7BBE8D62B9F365B00BC884A /* goormthonApp.swift */,
 				F74F48C22B8EBE6E00CFC786 /* ContentView.swift */,
 				F74F48C42B8EBE6F00CFC786 /* Assets.xcassets */,
 				F74F48C62B8EBE6F00CFC786 /* Preview Content */,
@@ -296,7 +293,7 @@
 				F7818CF02B8FB82200437773 /* RecommendTileView.swift in Sources */,
 				F74F48EC2B8EC44400CFC786 /* MapView.swift in Sources */,
 				F70685EA2B8F66B000405F44 /* ConceptView.swift in Sources */,
-				F7818CF82B8FE15300437773 /* goormthonApp.swift in Sources */,
+				F7BBE8D72B9F365B00BC884A /* goormthonApp.swift in Sources */,
 				F70685F12B8FA2F400405F44 /* DetailView.swift in Sources */,
 				CDDC8C312B8EF96D000669E9 /* NetworkManager.swift in Sources */,
 				F70685EF2B8F9F6900405F44 /* MapProfileView.swift in Sources */,
@@ -310,7 +307,6 @@
 				F70685ED2B8F864400405F44 /* LocationPreviewView.swift in Sources */,
 				F74F48F52B8EEE5600CFC786 /* MapViewModel.swift in Sources */,
 				F74F48F72B8EFC3400CFC786 /* LocationsListView.swift in Sources */,
-				F74F48C12B8EBE6E00CFC786 /* goormthonApp.swift in Sources */,
 				F70685E32B8F41F300405F44 /* OnBoardingSizeView.swift in Sources */,
 				CDDC8C3C2B8F0DD3000669E9 /* RequestAPI.swift in Sources */,
 			);

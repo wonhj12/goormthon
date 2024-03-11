@@ -4,20 +4,17 @@ struct RecommendTileView: View {
     let location: Location
     
     let baseURLString = ""
-
-     
+    
+    
     var body: some View {
         ZStack {
             RoundedRectangle(cornerRadius: 10)
                 .foregroundColor(.beigie100)
                 .frame(width: 360,height: 95)
-//                .shadow(radius: 4 , x: 0, y: 4)
             
             HStack {
                 if let imageName = location.imageName {
-                    
-                    AsyncImage(url: URL(string: imageName),
-                               scale: 3) { phase in
+                    AsyncImage(url: URL(string: imageName), scale: 3) { phase in
                         switch phase {
                         case .empty:
                             ZStack {
@@ -31,14 +28,11 @@ struct RecommendTileView: View {
                             // use placeholder for production app
                         @unknown default:
                             EmptyView()
-                        }}
-                               //.resizable()
-                        .clipShape(Circle())
-                        .frame(width: 64,height: 64)
-                        .aspectRatio(contentMode: .fill)
-                        
-                 //   Image(imageName)
-                        
+                        }
+                    }
+                    .clipShape(Circle())
+                    .frame(width: 64,height: 64)
+                    .aspectRatio(contentMode: .fill)
                 } else {
                     Circle()
                         .foregroundStyle(.gray100)
@@ -57,11 +51,11 @@ struct RecommendTileView: View {
                         .font(.subheadline)
                         .foregroundStyle(.gray400)
                         .frame(maxWidth: .infinity, alignment: .leading)
-                    
+
                     // 해시태그
                     HStack {
                         ForEach(location.hashTags.extractKeywords(), id: \.self) { hashTag in
-                           Text(hashTag)
+                            Text(hashTag)
                                 .font(.caption2)
                                 .frame(height: 20)
                                 .foregroundStyle(.gray300)
@@ -69,7 +63,7 @@ struct RecommendTileView: View {
                                 .background {
                                     RoundedRectangle(cornerRadius: 100)
                                         .foregroundStyle(.beigie300)
-                                        
+                                    
                                 }
                         }
                     }
