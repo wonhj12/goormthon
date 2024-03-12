@@ -77,5 +77,6 @@ class MapViewModel: ObservableObject {
     
     func changeLocations() {
         locations = LocationData.location2
+        location = locations.first!
     }
 }

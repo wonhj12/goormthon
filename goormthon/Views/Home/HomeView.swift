@@ -51,15 +51,17 @@ struct HomeView: View {
             // AI 추천
             Text("AI 추천 장소")
                 .font(.headline)
+                .fontWeight(.semibold)
                 .frame(maxWidth: .infinity, alignment: .leading)
                 .padding(.horizontal)
             
             List {
-                ForEach(LocationData.locations) { location in
+                ForEach(LocationData.allLocations) { location in
                     RecommendTileView(location: location)
                         .listRowSeparator(.hidden)
                 }
             }
+            .listRowSpacing(0)
             .listStyle(.plain)
             
             Spacer()

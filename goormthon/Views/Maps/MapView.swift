@@ -37,6 +37,7 @@ struct MapView: View {
                             .foregroundStyle(.gray200)
                             .bold()
                         
+                        
                     }
                     .padding(.horizontal)
                     .popoverTip(resetTip)

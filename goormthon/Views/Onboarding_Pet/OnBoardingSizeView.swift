@@ -34,30 +34,31 @@ struct OnBoardingSizeView: View {
                         .resizable()
                         .aspectRatio(contentMode: .fit)
                         .frame(width: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/,height: 100)
-                        .padding(.leading,12)
-                        .padding(.vertical,8)
-                        .animation(nil)
+                        .padding(.leading, 12)
+                        .padding(.vertical, 8)
+                        .animation(nil, value: UUID())
                     
                     VStack(alignment: .leading) {
                         Text("대형견")
                             .font(.title2)
                             .frame(maxWidth: .infinity, alignment: .leading)
                             .bold()
-                            .padding(.bottom,8)
+                            .padding(.bottom, 8)
                             .foregroundStyle(self.isFirstButtonActive ?  .white : .gray500)
-                            .animation(nil)
+                            .animation(nil, value: UUID())
                         
                         Text("성견 기준 25kg 이상")
                             .font(.body)
                             .foregroundStyle(.gray200)
                             .frame(maxWidth: .infinity, alignment: .leading)
+                            .animation(nil, value: UUID())
                     }
                 }
             }
             .background{
                 RoundedRectangle(cornerRadius: 10)
                     .foregroundColor(!self.isFirstButtonActive ? .beigie100 : .yellow300)
-                    .frame(width: 360,height: 116)
+                    .frame(width: 360, height: 116)
                     .shadow(radius: self.isFirstButtonActive ? 4 : 0, x: 0, y: self.isFirstButtonActive ? 4 : 0)
             }
             .frame(width: 360,height: 116)
@@ -76,29 +77,30 @@ struct OnBoardingSizeView: View {
                         .resizable()
                         .aspectRatio(contentMode: .fit)
                         .frame(width: 100,height: 100)
-                        .padding(.leading,12)
-                        .padding(.vertical,8)
-                        .animation(nil)
+                        .padding(.leading, 12)
+                        .padding(.vertical, 8)
+                        .animation(.none, value: 0)
                     
                     VStack(alignment: .leading) {
                         Text("중형견(스텐다드)")
                             .font(.title2)
                             .bold()
                             .frame(maxWidth: .infinity, alignment: .leading)
-                            .padding(.bottom,8)
+                            .padding(.bottom, 8)
                             .foregroundStyle(self.isSecondButtonActive ?  .white : .gray500)
-                            .animation(nil)
+                            .animation(nil, value: UUID())
                         
                         Text("성견 기준 10kg~25kg 미만")
                             .font(.body)
                             .foregroundStyle(.gray200)
                             .frame(maxWidth: .infinity, alignment: .leading)
+                            .animation(nil, value: UUID())
                     }
                 }
             }
             .background{
                 RoundedRectangle(cornerRadius: 10)
-                    .frame(width: 360,height: 116)
+                    .frame(width: 360, height: 116)
                     .foregroundColor(!self.isSecondButtonActive ? .beigie100 : .yellow300)
                     .shadow(radius:  self.isSecondButtonActive ? 4 : 0, x: 0, y:self.isSecondButtonActive ? 4 : 0)
                 
@@ -118,24 +120,25 @@ struct OnBoardingSizeView: View {
                     Image(!self.isThirdButtonActive ?  "S" : "Swhite")
                         .resizable()
                         .aspectRatio(contentMode: .fit)
-                        .frame(width: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/,height: 100)
-                        .padding(.leading,12)
-                        .padding(.vertical,8)
-                        .animation(nil)
+                        .frame(width: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/, height: 100)
+                        .padding(.leading, 12)
+                        .padding(.vertical, 8)
+                        .animation(nil, value: UUID())
                     
                     VStack(alignment: .leading) {
                         Text("소형견")
                             .font(.title2)
                             .bold()
                             .frame(maxWidth: .infinity, alignment: .leading)
-                            .padding(.bottom,8)
+                            .padding(.bottom, 8)
                             .foregroundStyle(self.isThirdButtonActive ? .white : .gray500)
-                            .animation(nil)
+                            .animation(nil, value: UUID())
                         
                         Text("성견 기준 10kg 미만")
                             .font(.body)
                             .foregroundStyle(.gray200)
                             .frame(maxWidth: .infinity, alignment: .leading)
+                            .animation(nil, value: UUID())
                     }
                 }
             }
@@ -146,7 +149,7 @@ struct OnBoardingSizeView: View {
                     .shadow(radius: self.isThirdButtonActive ? 4 : 0, x: 0, y: self.isThirdButtonActive ? 4 : 0)
                 
             }
-            .frame(width: 360,height: 116)
+            .frame(width: 360, height: 116)
             .padding(.horizontal, 16)
             
             Spacer()

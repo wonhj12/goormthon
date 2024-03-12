@@ -43,6 +43,7 @@ struct RecommendTileView: View {
                     // 제목
                     Text(location.name)
                         .font(.headline)
+                        .fontWeight(.semibold)
                         .foregroundStyle(.gray500)
                         .frame(maxWidth: .infinity, alignment: .leading)
                     
@@ -67,8 +68,8 @@ struct RecommendTileView: View {
                                 }
                         }
                     }
-                    .padding(.top, 6)
                 }
+                .padding(.vertical, 6)
             }
             .padding()
         }
@@ -77,5 +78,5 @@ struct RecommendTileView: View {
 }
 
 #Preview {
-    RecommendTileView(location: LocationData.locations.first!)
+    RecommendTileView(location: LocationData.allLocations.first!)
 }

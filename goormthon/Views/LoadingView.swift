@@ -18,52 +18,51 @@ struct LoadingView: View {
             Image("MapBG")
                 .resizable()
                 .ignoresSafeArea()
-                .frame(maxWidth: .infinity, maxHeight: .infinity)
+                .scaleEffect(1.05, anchor: .center)
             
             Color.gray500.opacity(0.5)
             
             VStack(alignment: .center) {
                 
+                // 로딩 애니메이션
                 Image("LoadingDog")
                     .opacity(iSAnimating ? 0.3 : 1)
-                    .animation(.easeInOut(duration: 0.2))
                     .onAppear{
-                        DispatchQueue.main.asyncAfter(deadline: .now() + 0.2) {
-                            iSAnimating = true
+                        withAnimation(.easeInOut(duration: 0.2)) {
+                            DispatchQueue.main.asyncAfter(deadline: .now() + 0.2) {
+                                iSAnimating = true
+                            }
+                            DispatchQueue.main.asyncAfter(deadline: .now() + 0.4) {
+                                iSAnimating = false
+                            }
+                            DispatchQueue.main.asyncAfter(deadline: .now() + 0.6) {
+                                iSAnimating = true
+                            }
+                            
+                            DispatchQueue.main.asyncAfter(deadline: .now() + 0.8) {
+                                iSAnimating = false
+                            }
+                            DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+                                iSAnimating = true
+                            }
+                            
+                            DispatchQueue.main.asyncAfter(deadline: .now() + 1.2) {
+                                iSAnimating = false
+                            }
+                            
+                            DispatchQueue.main.asyncAfter(deadline: .now() + 1.4) {
+                                iSAnimating = true
+                            }
+                            
+                            DispatchQueue.main.asyncAfter(deadline: .now() + 1.6) {
+                                iSAnimating = false
+                            }
+                            DispatchQueue.main.asyncAfter(deadline: .now() + 1.8) {
+                                iSAnimating = true
+                            }
                         }
-                        
-                        DispatchQueue.main.asyncAfter(deadline: .now() + 0.4) {
-                            iSAnimating = false
-                        }
-                        DispatchQueue.main.asyncAfter(deadline: .now() + 0.6) {
-                            iSAnimating = true
-                        }
-                        
-                        DispatchQueue.main.asyncAfter(deadline: .now() + 0.8) {
-                            iSAnimating = false
-                        }
-                        DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
-                            iSAnimating = true
-                        }
-                        
-                        DispatchQueue.main.asyncAfter(deadline: .now() + 1.2) {
-                            iSAnimating = false
-                        }
-                        
-                        DispatchQueue.main.asyncAfter(deadline: .now() + 1.4) {
-                            iSAnimating = true
-                        }
-                        
-                        DispatchQueue.main.asyncAfter(deadline: .now() + 1.6) {
-                            iSAnimating = false
-                        }
-                        DispatchQueue.main.asyncAfter(deadline: .now() + 1.8) {
-                            iSAnimating = true
-                        }
-                        
-                       
                     }
-            
+                
                 // 해시태그
                 if (state == 2) {
                     HStack(spacing: 6) {

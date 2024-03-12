@@ -7,9 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		CDDC8C312B8EF96D000669E9 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDDC8C302B8EF96D000669E9 /* NetworkManager.swift */; };
 		CDDC8C372B8EFB92000669E9 /* LocationInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDDC8C362B8EFB92000669E9 /* LocationInfoView.swift */; };
-		CDDC8C3A2B8EFBD9000669E9 /* LocationInfoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDDC8C392B8EFBD9000669E9 /* LocationInfoViewModel.swift */; };
 		CDDC8C3C2B8F0DD3000669E9 /* RequestAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDDC8C3B2B8F0DD3000669E9 /* RequestAPI.swift */; };
 		F70685DE2B8F41F300405F44 /* OnBoardingPersonalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F70685D82B8F41F300405F44 /* OnBoardingPersonalView.swift */; };
 		F70685E12B8F41F300405F44 /* OnboardingNameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F70685DB2B8F41F300405F44 /* OnboardingNameView.swift */; };
@@ -43,9 +41,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		CDDC8C302B8EF96D000669E9 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		CDDC8C362B8EFB92000669E9 /* LocationInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationInfoView.swift; sourceTree = "<group>"; };
-		CDDC8C392B8EFBD9000669E9 /* LocationInfoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationInfoViewModel.swift; sourceTree = "<group>"; };
 		CDDC8C3B2B8F0DD3000669E9 /* RequestAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestAPI.swift; sourceTree = "<group>"; };
 		F70685D82B8F41F300405F44 /* OnBoardingPersonalView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnBoardingPersonalView.swift; sourceTree = "<group>"; };
 		F70685DB2B8F41F300405F44 /* OnboardingNameView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingNameView.swift; sourceTree = "<group>"; };
@@ -96,8 +92,6 @@
 			children = (
 				F74F48F42B8EEE5600CFC786 /* MapViewModel.swift */,
 				F70685E42B8F420F00405F44 /* UserViewModel.swift */,
-				CDDC8C302B8EF96D000669E9 /* NetworkManager.swift */,
-				CDDC8C392B8EFBD9000669E9 /* LocationInfoViewModel.swift */,
 				CDDC8C3B2B8F0DD3000669E9 /* RequestAPI.swift */,
 			);
 			path = ViewModels;
@@ -292,13 +286,11 @@
 				F70685DE2B8F41F300405F44 /* OnBoardingPersonalView.swift in Sources */,
 				F7818CF62B8FE0D600437773 /* LoadingView.swift in Sources */,
 				CDDC8C372B8EFB92000669E9 /* LocationInfoView.swift in Sources */,
-				CDDC8C3A2B8EFBD9000669E9 /* LocationInfoViewModel.swift in Sources */,
 				F7818CF02B8FB82200437773 /* RecommendTileView.swift in Sources */,
 				F74F48EC2B8EC44400CFC786 /* MapView.swift in Sources */,
 				F70685EA2B8F66B000405F44 /* ConceptView.swift in Sources */,
 				F7BBE8D72B9F365B00BC884A /* goormthonApp.swift in Sources */,
 				F70685F12B8FA2F400405F44 /* DetailView.swift in Sources */,
-				CDDC8C312B8EF96D000669E9 /* NetworkManager.swift in Sources */,
 				F70685EF2B8F9F6900405F44 /* MapProfileView.swift in Sources */,
 				F70685E12B8F41F300405F44 /* OnboardingNameView.swift in Sources */,
 				F7818CFA2B8FE16A00437773 /* Extesion.swift in Sources */,
@@ -449,10 +441,6 @@
 				DEVELOPMENT_ASSET_PATHS = "\"goormthon/Preview Content\"";
 				DEVELOPMENT_TEAM = 785KK9R5M8;
 				ENABLE_PREVIEWS = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/goormthon/DaumMap.embeddedframework",
-				);
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = goormthon/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "강생이랑";
@@ -492,10 +480,6 @@
 				DEVELOPMENT_ASSET_PATHS = "\"goormthon/Preview Content\"";
 				DEVELOPMENT_TEAM = 785KK9R5M8;
 				ENABLE_PREVIEWS = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/goormthon/DaumMap.embeddedframework",
-				);
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = goormthon/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "강생이랑";
