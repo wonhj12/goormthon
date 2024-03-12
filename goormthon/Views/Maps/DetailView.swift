@@ -136,7 +136,7 @@ struct DetailView: View {
                                 .foregroundStyle(.gray100)
                                 .padding(.top, 12)
                             
-                            Text("\(viewModel.user.petName)는 대형견이고 활발해서 뛰어 놀기를 좋아해요.\n이러한 특성에 맞춰서 넓은 마당이 있고 호텔링이 가능한\n이곳을 추천해드렸어요!")
+                            Text("\(viewModel.user.petName)는 소형견이고 활발해서 뛰어 놀기를 좋아해요.\n이러한 특성에 맞춰서 넓은 공간이 있는 이곳을 추천해드렸어요!")
                                 .font(.footnote.bold())
                                 .foregroundStyle(.gray200)
                                 .multilineTextAlignment(.center)

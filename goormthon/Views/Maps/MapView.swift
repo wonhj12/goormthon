@@ -164,8 +164,7 @@ extension MapView {
         .task {
             try? Tips.resetDatastore()
             try? Tips.configure([
-                .displayFrequency(.immediate)
-                //                .datastoreLocation(.applicationDefault)
+                .datastoreLocation(.applicationDefault)
             ])
         }
 }

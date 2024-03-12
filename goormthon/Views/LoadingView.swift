@@ -20,10 +20,10 @@ struct LoadingView: View {
                 .ignoresSafeArea()
                 .scaleEffect(1.05, anchor: .center)
             
+            // 배경 어둡게
             Color.gray500.opacity(0.5)
             
             VStack(alignment: .center) {
-                
                 // 로딩 애니메이션
                 Image("LoadingDog")
                     .opacity(iSAnimating ? 0.3 : 1)
@@ -65,7 +65,7 @@ struct LoadingView: View {
                 
                 // 해시태그
                 if (state == 2) {
-                    HStack(spacing: 6) {
+                    HStack(spacing: 8) {
                         ForEach(viewModel.user.tags.extractKeywords(), id: \.self) { hashTag in
                             Text(hashTag)
                                 .foregroundStyle(.gray200)
@@ -79,12 +79,15 @@ struct LoadingView: View {
                         }
                     }
                     .frame(maxWidth: .infinity, alignment: .center)
+                    .padding(.top, 16)
                 }
                 
                 // 문구
                 Text(state == 2 ? "인공지능이 \(viewModel.user.petName)과 어울리는\n여행지를 고르고 있어요!" : "인공지능이 \(viewModel.user.petName)의 성격을 파악하고 있어요!")
                     .font(.body.bold())
                     .foregroundStyle(.white)
+                    .multilineTextAlignment(.center)
+                    .padding(.top, 16)
             }
         }
         .ignoresSafeArea()
@@ -105,5 +108,5 @@ struct LoadingView: View {
 }
 
 #Preview {
-    LoadingView(viewModel: UserViewModel(user: User(petName: "", petSize: "또리", petAge: "2", petPersonality: "", tripDate: "", tripConcept: "", tags: "#대형견 #활발한 #뛰는걸 좋아하는")), state: 1)
+    LoadingView(viewModel: UserViewModel(user: User(petName: "", petSize: "또리", petAge: "2", petPersonality: "", tripDate: "", tripConcept: "", tags: "#대형견 #활발한 #뛰는걸 좋아하는")), state: 2)
 }

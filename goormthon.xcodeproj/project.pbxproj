@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		CDDC8C372B8EFB92000669E9 /* LocationInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDDC8C362B8EFB92000669E9 /* LocationInfoView.swift */; };
 		CDDC8C3C2B8F0DD3000669E9 /* RequestAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDDC8C3B2B8F0DD3000669E9 /* RequestAPI.swift */; };
 		F70685DE2B8F41F300405F44 /* OnBoardingPersonalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F70685D82B8F41F300405F44 /* OnBoardingPersonalView.swift */; };
 		F70685E12B8F41F300405F44 /* OnboardingNameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F70685DB2B8F41F300405F44 /* OnboardingNameView.swift */; };
@@ -41,7 +40,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		CDDC8C362B8EFB92000669E9 /* LocationInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationInfoView.swift; sourceTree = "<group>"; };
 		CDDC8C3B2B8F0DD3000669E9 /* RequestAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestAPI.swift; sourceTree = "<group>"; };
 		F70685D82B8F41F300405F44 /* OnBoardingPersonalView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnBoardingPersonalView.swift; sourceTree = "<group>"; };
 		F70685DB2B8F41F300405F44 /* OnboardingNameView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingNameView.swift; sourceTree = "<group>"; };
@@ -171,7 +169,6 @@
 				F70685EB2B8F79FD00405F44 /* Maps */,
 				F70685E82B8F42A000405F44 /* Onboarding_Pet */,
 				F74F48FA2B8F393C00CFC786 /* Onboarding_Personal */,
-				CDDC8C362B8EFB92000669E9 /* LocationInfoView.swift */,
 				F7818CF52B8FE0D600437773 /* LoadingView.swift */,
 			);
 			path = Views;
@@ -285,7 +282,6 @@
 				F74F48C32B8EBE6E00CFC786 /* ContentView.swift in Sources */,
 				F70685DE2B8F41F300405F44 /* OnBoardingPersonalView.swift in Sources */,
 				F7818CF62B8FE0D600437773 /* LoadingView.swift in Sources */,
-				CDDC8C372B8EFB92000669E9 /* LocationInfoView.swift in Sources */,
 				F7818CF02B8FB82200437773 /* RecommendTileView.swift in Sources */,
 				F74F48EC2B8EC44400CFC786 /* MapView.swift in Sources */,
 				F70685EA2B8F66B000405F44 /* ConceptView.swift in Sources */,
@@ -447,7 +443,6 @@
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.travel";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
@@ -486,7 +481,6 @@
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.travel";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
