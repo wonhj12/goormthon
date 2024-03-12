@@ -64,7 +64,7 @@ struct DatePickView: View {
                         .padding(.leading, 16)
                 }
                 
-                DatePicker("여행 종료일", selection: $endDate, in: Date()..., displayedComponents: .date)
+                DatePicker("여행 종료일", selection: $endDate, in: startDate..., displayedComponents: .date)
                     .onTapGesture {
                         withAnimation {
                             if (showStart) { showStart = false }
@@ -78,7 +78,7 @@ struct DatePickView: View {
                     Divider()
                         .padding(.leading, 16)
                     
-                    DatePicker("", selection: $endDate, in: Date()..., displayedComponents: .date)
+                    DatePicker("", selection: $endDate, in: startDate..., displayedComponents: .date)
                         .datePickerStyle(.graphical)
                         .padding(.horizontal, 8)
                 }
