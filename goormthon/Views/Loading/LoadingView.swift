@@ -25,43 +25,46 @@ struct LoadingView: View {
             
             VStack(alignment: .center) {
                 // 로딩 애니메이션
-                Image("LoadingDog")
-                    .opacity(iSAnimating ? 0.3 : 1)
-                    .onAppear{
-                        withAnimation(.easeInOut(duration: 0.2)) {
-                            DispatchQueue.main.asyncAfter(deadline: .now() + 0.2) {
-                                iSAnimating = true
-                            }
-                            DispatchQueue.main.asyncAfter(deadline: .now() + 0.4) {
-                                iSAnimating = false
-                            }
-                            DispatchQueue.main.asyncAfter(deadline: .now() + 0.6) {
-                                iSAnimating = true
-                            }
-                            
-                            DispatchQueue.main.asyncAfter(deadline: .now() + 0.8) {
-                                iSAnimating = false
-                            }
-                            DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
-                                iSAnimating = true
-                            }
-                            
-                            DispatchQueue.main.asyncAfter(deadline: .now() + 1.2) {
-                                iSAnimating = false
-                            }
-                            
-                            DispatchQueue.main.asyncAfter(deadline: .now() + 1.4) {
-                                iSAnimating = true
-                            }
-                            
-                            DispatchQueue.main.asyncAfter(deadline: .now() + 1.6) {
-                                iSAnimating = false
-                            }
-                            DispatchQueue.main.asyncAfter(deadline: .now() + 1.8) {
-                                iSAnimating = true
-                            }
-                        }
-                    }
+                dogLoadingView()
+                    .frame(width: 240, height: 240)
+                
+//                Image("LoadingDog")
+//                    .opacity(iSAnimating ? 0.3 : 1)
+//                    .onAppear{
+//                        withAnimation(.easeInOut(duration: 0.2)) {
+//                            DispatchQueue.main.asyncAfter(deadline: .now() + 0.2) {
+//                                iSAnimating = true
+//                            }
+//                            DispatchQueue.main.asyncAfter(deadline: .now() + 0.4) {
+//                                iSAnimating = false
+//                            }
+//                            DispatchQueue.main.asyncAfter(deadline: .now() + 0.6) {
+//                                iSAnimating = true
+//                            }
+//                            
+//                            DispatchQueue.main.asyncAfter(deadline: .now() + 0.8) {
+//                                iSAnimating = false
+//                            }
+//                            DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+//                                iSAnimating = true
+//                            }
+//                            
+//                            DispatchQueue.main.asyncAfter(deadline: .now() + 1.2) {
+//                                iSAnimating = false
+//                            }
+//                            
+//                            DispatchQueue.main.asyncAfter(deadline: .now() + 1.4) {
+//                                iSAnimating = true
+//                            }
+//                            
+//                            DispatchQueue.main.asyncAfter(deadline: .now() + 1.6) {
+//                                iSAnimating = false
+//                            }
+//                            DispatchQueue.main.asyncAfter(deadline: .now() + 1.8) {
+//                                iSAnimating = true
+//                            }
+//                        }
+//                    }
                 
                 // 해시태그
                 if (state == 2) {
@@ -92,7 +95,7 @@ struct LoadingView: View {
         }
         .ignoresSafeArea()
         .onAppear {
-            DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 2) {
+            DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 2.5) {
                 isDestinationActive = true
             }
         }
